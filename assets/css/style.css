@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+}
+
+body {
+    background-color: green;
+    text-align: center;
+}
+
+.score-count {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+}

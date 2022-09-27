@@ -4,25 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Link style sheet to html head-->
+    <link rel="style-sheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
     <h1>Rock Paper Scissors</h1>
     </header>
-    <div>
-        Player
-        <span>0</span>
+<!--Add code for results image and message-->
+    <div> Result image
+        <img src="" alt="">
     </div>
     <div>
-        Computer
-        <span>0</span>
+        <p>Rock smash scissors, You win!</p>
     </div>
-    <div>
+    
+    <!--Add code for player and computer scores-->
+    <div class="score-count">
+        <div>
+            Player
+            <span class="score-result">0</span>
+        </div>
+        <div>
+            Computer
+            <span class="score-result">0</span>
+        </div>
+    </div>
+   
+    <!--Add code for Rock Paper Scissors selections-->
+    <div class="selections">
+        <div class="selection"> Rock
+            <img src="" alt="">
+        </div>
+        <div class="selection"> Papper
+            <img src="" alt="">
+        </div>
+        <div class="selection"> Scissors
+            <img src="" alt="">
+        </div>
+    </div>
+   <!-- <div>
         <button>Rock</button>
         <button>Paper</button>
         <button>Scissors</button>
-    </div>
-    
+    </div> -->
+    <p id="play-message">Make your move!</p>
+    <!--Link javascript to html body-->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

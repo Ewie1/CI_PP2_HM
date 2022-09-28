@@ -8,7 +8,8 @@
 
 header {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
+    font-size: 2rem;
 }
 
 body {
@@ -37,18 +38,19 @@ body {
 
 .selection {
     padding: 5px;
-    border: 4px solid orangered;
+   
     border-radius: 50%;
     margin: 0 20px;
     opacity: 0.8;
     display: inline-block;
     background-color: antiquewhite;
-    transition: 150ms; 
+    transition: 200ms; 
 }
 
 .selection:hover{
     cursor: pointer;
-    transform:scale(1.2);
+    transform:scale(0.8);
+    border: 4px solid orangered;
 }
 
 .result-selection-winner{
@@ -58,4 +60,9 @@ body {
 .result-selection{
     opacity: 1;
     font-size: 1.5rem;
+}
+
+#play-message{
+    font-size: 1rem;
+    color: white;
 }

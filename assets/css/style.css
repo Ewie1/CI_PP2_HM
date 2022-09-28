@@ -18,6 +18,11 @@ body {
     font-family: 'Indie Flower', sans-serif;
 }
 
+.result{
+    font-size: 2rem;
+    color: blanchedalmond;
+}
+
 .score-count {
     display: grid;
     justify-content: center;

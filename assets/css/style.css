@@ -19,3 +19,17 @@ body {
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
 }
+
+.selections {
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.selection {
+    display: inline-block;
+}
+
+.selection:hover{
+    cursor: pointer;
+}

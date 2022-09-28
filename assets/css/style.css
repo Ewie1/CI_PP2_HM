@@ -28,8 +28,11 @@ body {
 
 .selection {
     display: inline-block;
+    background: none;
+    transition: 150ms; 
 }
 
 .selection:hover{
     cursor: pointer;
+    transform:scale(1.2);
 }

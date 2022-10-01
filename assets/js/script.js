@@ -1,12 +1,14 @@
 /**
  * Declare all variables
  */
+ let playerScore = 0;
+ let computerScore = 0;
 let rock_selection = document.getElementById("rock");
 let paper_selection = document.getElementById("paper");
 let scissors_selection = document.getElementById("scissors");
 let results = document.getElementsByClassName("result");
-//let playerCount = document.getElementsByClassName("player-score");
-let computerCount = document.getElementsByClassName("computer-score");
+let playerCount = document.getElementById("player-score");
+let computerCount = document.getElementById("computer-score");
 let scoreBoard = document.getElementsByClassName("score-count");
 
 
@@ -81,10 +83,16 @@ function incrementPlayerWin(){
 
     let playerCount = parseInt(document.getElementById("player-score").innerText);
     document.getElementById("player-score").innerText = ++playerCount;
+    document.getElementById("result").innerText = "You win!"; 
 
-   /* let playerScore = 0;
-    playerScore++;
-    playerCount.innerHTML = playerScore; */
+
+   
+  /*  playerScore++;
+    playerCount.innerHTML = playerScore;
+    computerCount.innerHTML = computerScore; */
+   // results.innerHTML =` ${player} beats ${computer} You Win!`
+
+    
     
     console.log("win")
 }
@@ -93,14 +101,15 @@ function incrementPlayerLose(){
 
     let computerCount = parseInt(document.getElementById("computer-score").innerText);
     document.getElementById("computer-score").innerText = ++computerCount;
-    console.log("lose")
+    document.getElementById("result").innerText = "You Lose!"; 
+    console.log("lose");
    /* let computerScore = 0;
     computerScore++;
     computerCount.innerHTML = computerScore; */
 }
 
 function incrementDraw(){
-    
+    document.getElementById("result").innerText = "Draw!"; 
 }
 
 

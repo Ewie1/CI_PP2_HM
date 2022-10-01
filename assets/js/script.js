@@ -16,7 +16,7 @@ let scoreBoard = document.getElementsByClassName("score-count")
  * Call rock, paper, scissor selections and add click eventlistener 
  */
 
-document.addEventListener("DOMContentLoaded", function() {
+ function game () {
     rock_selection.addEventListener("click",function(){
         runGame("rock");
     })
@@ -24,10 +24,36 @@ document.addEventListener("DOMContentLoaded", function() {
         runGame("paper");
     }) 
     scissors_selection.addEventListener("click",function(){
-        runGame("scissor");
+        runGame("scissors");
     }) 
-})
 
+}
+
+game();
+
+
+
+function runGame(playSelections){
+ let computer = computerSelection();
+   switch(computer + playSelections) {
+        case "rockscissors":
+        case "paperrock":
+        case "scissorspaper":
+         console.log("Win!");
+            break;
+        case "scissorsrock":
+        case "rockpaper":
+        case "paperscissors":
+            console.log("Lose!"); 
+            break;
+        case "scissorsscissors":
+        case "rockrock":
+        case "paperpaper":
+            console.log("Draw!");
+           break;                      
+
+    }
+}
 
 /**
  * 
@@ -39,30 +65,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let compSelection = Math.floor(Math.random() * 3);
     return selections[compSelection];
 }
-
-function runGame(playSelections){
-    console.log("me" + playSelections);
-   // let computer = computerSelection();
-   // let player = playerSelection();
-   // switch(computer + player) {
-     //   case "rockscissors":
-       // case "paperrock":
-     //   case "scissorspaper":
-     //      console.log("Win!");
-     //       break;
-     //   case "scissorsrock":
-     //   case "rockpaper":
-     //   case "paperscissors":
-     //       console.log("Lose!"); 
-     //       break;
-     //   case "scissorsscissors":
-     //   case "rockrock":
-     //   case "paperpaper":
-     //       console.log("Draw!");
-     //       break;                      
-
-    }
-
 
 function playerSelection(){
 

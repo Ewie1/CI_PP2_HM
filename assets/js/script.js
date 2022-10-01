@@ -5,9 +5,9 @@ let rock_selection = document.getElementById("rock");
 let paper_selection = document.getElementById("paper");
 let scissors_selection = document.getElementById("scissors");
 let results = document.getElementsByClassName("result");
-let playercount = document.getElementsByClassName("player-score");
+//let playerCount = document.getElementsByClassName("player-score");
 let computerCount = document.getElementsByClassName("computer-score");
-let scoreBoard = document.getElementsByClassName("score-count")
+let scoreBoard = document.getElementsByClassName("score-count");
 
 
 
@@ -44,12 +44,12 @@ function runGame(playSelections){
         case "scissorsrock":
         case "rockpaper":
         case "paperscissors":
-            
+           incrementPlayerLose(); 
             break;
         case "scissorsscissors":
         case "rockrock":
         case "paperpaper":
-            
+            incrementDraw();
            break;                      
 
     }
@@ -78,16 +78,31 @@ function gameRules(){
 }
 
 function incrementPlayerWin(){
-    let playerScore = 0;
+
+    let playerCount = parseInt(document.getElementById("player-score").innerText);
+    document.getElementById("player-score").innerText = ++playerCount;
+
+   /* let playerScore = 0;
     playerScore++;
-    playercount.innerHTML = playerScore;
+    playerCount.innerHTML = playerScore; */
     
     console.log("win")
 }
 
 function incrementPlayerLose(){
 
+    let computerCount = parseInt(document.getElementById("computer-score").innerText);
+    document.getElementById("computer-score").innerText = ++computerCount;
+    console.log("lose")
+   /* let computerScore = 0;
+    computerScore++;
+    computerCount.innerHTML = computerScore; */
 }
+
+function incrementDraw(){
+    
+}
+
 
 function isWinner(){
 

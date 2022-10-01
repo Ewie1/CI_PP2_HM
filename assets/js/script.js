@@ -68,8 +68,8 @@ function runGame(playSelections){
     return selections[compSelection];
 }
 
-function playerSelection(){
-
+function imageSelection(){
+    let image = document.getElementsByClassName("result-selection");
 }
 
 

@@ -39,17 +39,17 @@ function runGame(playSelections){
         case "rockscissors":
         case "paperrock":
         case "scissorspaper":
-         console.log("Win!");
+         incrementPlayerWin();
             break;
         case "scissorsrock":
         case "rockpaper":
         case "paperscissors":
-            console.log("Lose!"); 
+            
             break;
         case "scissorsscissors":
         case "rockrock":
         case "paperpaper":
-            console.log("Draw!");
+            
            break;                      
 
     }
@@ -78,7 +78,11 @@ function gameRules(){
 }
 
 function incrementPlayerWin(){
-
+    let playerScore = 0;
+    playerScore++;
+    playercount.innerHTML = playerScore;
+    
+    console.log("win")
 }
 
 function incrementPlayerLose(){

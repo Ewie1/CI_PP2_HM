@@ -22,7 +22,6 @@ let finalColumn = document.querySelector("data-final-column");
 
  function game () {
     rock_selection.addEventListener("click",function(){
-        document.getElementById("paper-image").innerText = rockImage();
         runGame("rock");
         imageSelection()
         
@@ -34,7 +33,7 @@ let finalColumn = document.querySelector("data-final-column");
         
     }) 
     scissors_selection.addEventListener("click",function(){
-        document.getElementById("paper-image").innerText = scissorsImage();
+        scissorsImage();
         runGame("scissors");
         imageSelection()
         
@@ -87,58 +86,50 @@ function runGame(playSelections){
 function imageSelection(){ 
     let computerSelect = computerSelection();
     
-    if (computerSelect === "rock"){
-        document.getElementById("rock-image").innerText = "rock"
+  /*  if (computerSelect === "rock"){
+        document.getElementById("rock-image").innerText = "rock";
    } else if (computerSelect === "paper"){
        document.getElementById("rock-image").innerText = "paper";
    } else if (computerSelect === "scissors"){
-       document.getElementById("rock-image").innerText = "scissors";
-   } 
+       document.getElementById("rock-image").innerText = "scissors"
+   } */
 } 
 
 function rockImage()
 {
- /*   var image = document.createElement("img");
-var imageParent = document.getElementById("body");
-image.id = "id";
-image.className = "class";
-image.src = "assets/images/rock4.png";            // image.src = "IMAGE URL/PATH"
-imageParent.appendChild(image); */
+
   
   let rockImg = document.createElement("img");
     rockImg.src = "assets/images/rock4.png";
-    document.body.appendChild(rockImg);
+    document.getElementById("paper-image").appendChild(rockImg);
+
+    
+
+        
+    }
+
 
     
 
 
-}
 
-function paperImage(paper1){
+
+function paperImage(){
     let paperImg = document.createElement("img");
     paperImg.src = "assets/images/paper4.png";
-    document..appendChild(paperImg);
+         document.getElementById("paper-image").appendChild(paperImg);
 
- document.getElementById("paper-image").innerText = paper1;
+ 
 
 }
 
 function scissorsImage(){
     let scissorsImg = document.createElement("img");
     scissorsImg.src = "assets/images/scissors4.png";
-    document.body.appendChild(scissorsImg);
+    document.getElementById("paper-image").appendChild(scissorsImg);
 }
    
  
-
-  /*  function LoadImages() {
-        let searchPic;
-        searchPic = new Image();
-        searchPic.onload=function () {
-            document["pic1"].src = "/workspace/CI_PP2_HM/assets/images/paper4.png";
-        }
-        searchPic.src = "/workspace/CI_PP2_HM/assets/images/paper4.png"; // This is correct and the path is correct */
-    
     
 
 

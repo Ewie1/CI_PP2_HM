@@ -10,7 +10,7 @@ let results = document.getElementsByClassName("result");
 let playerCount = document.getElementById("player-score");
 let computerCount = document.getElementById("computer-score");
 let scoreBoard = document.getElementsByClassName("score-count");
-let finalColumn = document.querySelector("data-final-column");
+let button = document.getElementsByTagName("button");
 
 
 
@@ -22,22 +22,24 @@ let finalColumn = document.querySelector("data-final-column");
 
  function game () {
     rock_selection.addEventListener("click",function(){
-        runGame("rock");
-        imageSelection()
+       runGame("rock");
+       imageSelection()
+       displayRockImage();
+         
         
     })
     paper_selection.addEventListener("click",function(){
-         paperImage();
-        runGame("paper");
-        imageSelection()
+       runGame("paper");
+       imageSelection();
+       dispalyPaperImage();
+      
         
     }) 
     scissors_selection.addEventListener("click",function(){
-        scissorsImage();
-        runGame("scissors");
-        imageSelection()
-        
-    }) 
+       runGame("scissors");
+       imageSelection();
+       displayScissorsImage();
+     }) 
 
 }
 
@@ -86,79 +88,52 @@ function runGame(playSelections){
 function imageSelection(){ 
     let computerSelect = computerSelection();
     
-  /*  if (computerSelect === "rock"){
-        document.getElementById("rock-image").innerText = "rock";
-   } else if (computerSelect === "paper"){
-       document.getElementById("rock-image").innerText = "paper";
+    if (computerSelect === "rock"){
+        let rockImg = document.createElement("img");
+    rockImg.src = "assets/images/rock4.png";
+    document.getElementById("computer-image").appendChild(rockImg);
+
+   } else if (computerSelection() === "paper"){
+    let rockImg = document.createElement("img");
+    rockImg.src = "assets/images/paper4.png";
+    document.getElementById("computer-image").appendChild(rockImg);
+
    } else if (computerSelect === "scissors"){
-       document.getElementById("rock-image").innerText = "scissors"
-   } */
+    let rockImg = document.createElement("img");
+    rockImg.src = "assets/images/scissors4.png";
+    document.getElementById("computer-image").appendChild(rockImg);
+
+   } 
 } 
 
-function rockImage()
-{
-
-  
-  let rockImg = document.createElement("img");
+function displayRockImage(){
+     
+let rockImg = document.createElement("img");
     rockImg.src = "assets/images/rock4.png";
-    document.getElementById("paper-image").appendChild(rockImg);
+    document.getElementById("player-image").appendChild(rockImg);
+}
 
+function dispalyPaperImage(){
     
-
-        
-    }
-
-
-    
-
-
-
-
-function paperImage(){
+    document.getElementById("player-image")
     let paperImg = document.createElement("img");
     paperImg.src = "assets/images/paper4.png";
-         document.getElementById("paper-image").appendChild(paperImg);
-
- 
-
+         document.getElementById("player-image").appendChild(paperImg);
 }
 
-function scissorsImage(){
+function displayScissorsImage(){
+    
     let scissorsImg = document.createElement("img");
     scissorsImg.src = "assets/images/scissors4.png";
-    document.getElementById("paper-image").appendChild(scissorsImg);
+    document.getElementById("player-image").appendChild(scissorsImg);
 }
    
- 
-    
-
-
-
-
-
-
-
-
-function gameRules(){
-
-}
-
 function incrementPlayerWin(){
-
+    
     let playerCount = document.getElementById("player-score").innerText;
     document.getElementById("player-score").innerText = ++playerCount;
     document.getElementById("result").innerText = "You win!"; 
-
-
-   
-  /*  playerScore++;
-    playerCount.innerHTML = playerScore;
-    computerCount.innerHTML = computerScore; */
-   // results.innerHTML =` ${player} beats ${computer} You Win!`
-
-    
-    
-    console.log("win")
+console.log("win")
 }
 
 function incrementPlayerLose(){
@@ -167,20 +142,13 @@ function incrementPlayerLose(){
     document.getElementById("computer-score").innerText = ++computerCount;
     document.getElementById("result").innerText = "You Lose!"; 
     console.log("lose");
-   /* let computerScore = 0;
-    computerScore++;
-    computerCount.innerHTML = computerScore; */
 }
 
 function incrementDraw(){
     document.getElementById("result").innerText = "Draw!"; 
 }
 
-
-function isWinner(){
-
-}
-
-function selectionResults(){
-
+function removeImage(){
+    const selected = document.getElementById("result-selection");
+      selected.removeChild(selected.firstElementChild);
 }

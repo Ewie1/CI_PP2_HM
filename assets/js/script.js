@@ -27,6 +27,7 @@ let imageArray =["rock4.png", "paper4.png", "scissors4.png"]
        runGame("rock");
        imageSelection()
        displayPlayerImage();
+       playGame();
      
          
         
@@ -35,6 +36,7 @@ let imageArray =["rock4.png", "paper4.png", "scissors4.png"]
        runGame("paper");
        imageSelection();
        displayPlayerImage();
+       playGame();
       
         
     }) 
@@ -42,6 +44,7 @@ let imageArray =["rock4.png", "paper4.png", "scissors4.png"]
        runGame("scissors");
        imageSelection();
        displayPlayerImage();
+       playGame();
      }) 
  
 }
@@ -70,7 +73,7 @@ function runGame(playSelections){
            break;                      
         
     }
-    console.log(computer);
+   // console.log(computer);
 }
  
 /**
@@ -162,3 +165,4 @@ function removeImage(){
     const selected = document.getElementById("result-selection");
       selected.removeChild(selected.firstElementChild);
 }
+

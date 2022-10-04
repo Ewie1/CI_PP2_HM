@@ -12,6 +12,7 @@ let computerCount = document.getElementById("computer-score");
 let scoreBoard = document.getElementsByClassName("score-count");
 let button = document.getElementsByTagName("button");
 let img = document.getElementById("player-image")
+let imageArray =["rock4.png", "paper4.png", "scissors4.png"]
 
 
 
@@ -67,7 +68,7 @@ function runGame(playSelections){
         case "paperpaper":
             incrementDraw();
            break;                      
-
+        
     }
     console.log(computer);
 }
@@ -78,9 +79,14 @@ function runGame(playSelections){
  */
 
  function computerSelection(){
-    
-    let selections = ["rock", "paper", "scissors"];
+
+    let selections = ["rock" , "paper", "scissors"];
+   
+  /*  let comptSelection = Math.floor(Math.random() * imageArray.length);
+    selected_image = imageArray[comptSelection];
+    document.getElementById("computer-image").src = `assets/images/${selected_image}`*/
     let compSelection = Math.floor(Math.random() * 3);
+  //  return [compSelection];
     return selections[compSelection]; 
 }
  
@@ -88,26 +94,30 @@ function runGame(playSelections){
   * Write statement for computer selcetion images
   */
 function imageSelection(){ 
-    let computerSelect = computerSelection();
+    let comptSelection = Math.floor(Math.random() * imageArray.length);
+    selected_image = imageArray[comptSelection];
+    document.getElementById("computer-image").src = `assets/images/${selected_image}`
+
+   /* let computerSelect = computerSelection();
     
     if (computerSelect === "rock"){
-        
+
      /*   let rockImg = document.createElement("img");
     rockImg.src = "assets/images/rock4.png";
-    document.getElementById("computer-image").appendChild(rockImg); */
+    document.getElementById("computer-image").appendChild(rockImg); 
 
    } else if (computerSelection() === "paper"){
     
-  /*  let rockImg = document.createElement("img");
+    let rockImg = document.createElement("img");
     rockImg.src = "assets/images/paper4.png";
-    document.getElementById("computer-image").appendChild(rockImg); */
+    document.getElementById("computer-image").appendChild(rockImg); 
 
    } else if (computerSelect === "scissors"){
    /* let rockImg = document.createElement("img");
     rockImg.src = "assets/images/scissors4.png";
-    document.getElementById("computer-image").appendChild(rockImg); */
+    document.getElementById("computer-image").appendChild(rockImg); 
 
-   } 
+   } */
 } 
 
 function displayPlayerImage(){
@@ -124,11 +134,6 @@ function displayPlayerImage(){
         img.src = "assets/images/scissors4.png";
     })
 
-    
-    
-/*let rockImg = document.createElement("img");
-    rockImg.src = "assets/images/rock4.png";
-    document.getElementById("player-image").appendChild(rockImg); */
 }
 
 

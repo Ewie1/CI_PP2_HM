@@ -7,17 +7,16 @@ function main(){
 
 
 function playGame(){
-    let options = document.getElementsByClassName("selections");
-    let playerHand = document.getElementById("player-image");
-    let computerHand = document.getElementById("computer-image");
+    let options = document.querySelectorAll(".selections button");
+    let playerHand = document.querySelector("#player-image");
+    let computerHand = document.querySelector("#computer-image");
 
     // Computer option
     let computerOptions =["rock", "paper", "scissors"];
 
-   
-       // options.forEach(option => 
-            for (let i = 0; i < options.length; i++){
-            options[i].addEventListener("click", function(){
+   // for (let i = 0; i < options.length; i++)
+       options.forEach(option => {
+            option.addEventListener("click", function(){
         
                 //Computer choice
                 let computerNumber = Math.floor(Math.random() * 3) ;
@@ -25,35 +24,37 @@ function playGame(){
                 
 
                 //Call checkWinner here
+                checkWinner(this.textContent);
 
                 //Function to display selected images
          //   document.getElementById("player-image").src = `assets/images${this.textContent}`
-            computerHand.src = `assets/${computerChoice}.png`;
+            computerHand.src = `assets/img/${computerChoice}`;
+            playerHand.src = `assets/img/${this.textContent}`;
             });
        
        
-    }
-}
+    });
+};
 //Function to determine winner or loser
 
 function checkWinner(playerChoice, computerChoice){
 
-    let dispalyResult = document.getElementById("result");
-
+    let dispalyResult = document.querySelector(".results");
+console.log(dispalyResult);
     // Check for a Draw
 
     if(playerChoice === computerChoice){
-        dispalyResult.innerText = "It is a Draw";
+        dispalyResult.textContent = "It is a Draw";
         return;
     }
 
     // Check for rock 
     if (playerChoice === "rock"){
         if(computerChoice === "scissors"){
-            dispalyResult.innerText = "You win!";
+            dispalyResult.textContent = "You win!";
             return;
         } else{
-            dispalyResult.innerText = "Computer Wins";
+            dispalyResult.textContent = "Computer Wins";
             return;
         }
     }
@@ -61,20 +62,20 @@ function checkWinner(playerChoice, computerChoice){
     // Check for paper
     if (playerChoice === "paper"){
         if(computerChoice === "scissors"){
-            dispalyResult.innerText = "Computer Wins";
+            dispalyResult.textContent = "Computer Wins";
             return;
         } else{
-            dispalyResult.innerText = "You Win!";
+            dispalyResult.textContent = "You Win!";
             return;
         }
     }
       //Check for scissors
     if (playerChoice === "scissors"){
         if(computerChoice === "rock"){
-            dispalyResult.innerText = "Compuer wins!";
+            dispalyResult.textContent = "Compuer wins!";
             return;
         } else{
-            dispalyResult.innerText = "You win!";
+            dispalyResult.textContent = "You win!";
             return;
         }
     }

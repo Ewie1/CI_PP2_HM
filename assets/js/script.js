@@ -12,7 +12,7 @@ let computerCount = document.getElementById("computer-score");
 let scoreBoard = document.getElementsByClassName("score-count");
 let button = document.getElementsByTagName("button");
 let img = document.getElementById("player-image")
-let imageArray =["rock4.png", "paper4.png", "scissors4.png"]
+let imageArray =["rock.png", "paper.png", "scissors.png"];
 
 
 
@@ -126,15 +126,16 @@ function imageSelection(){
 function displayPlayerImage(){
 
     rock_selection.addEventListener("click", () =>{
-        img.src = "assets/images/rock4.png";
+        img.src = "assets/images/rock.png";
     })
      
     paper_selection.addEventListener("click", () =>{
-        img.src = "assets/images/paper4.png";
+        img.src = "assets/images/paper.png";
+    
     })
 
     scissors_selection.addEventListener("click", () =>{
-        img.src = "assets/images/scissors4.png";
+        img.src = "assets/images/scissors.png";
     })
 
 }

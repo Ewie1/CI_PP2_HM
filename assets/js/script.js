@@ -11,7 +11,7 @@ let playerCount = document.getElementById("player-score");
 let computerCount = document.getElementById("computer-score");
 let scoreBoard = document.getElementsByClassName("score-count");
 let button = document.getElementsByTagName("button");
-
+let img = document.getElementById("player-image")
 
 
 
@@ -21,26 +21,28 @@ let button = document.getElementsByTagName("button");
  */
 
  function game () {
+
     rock_selection.addEventListener("click",function(){
        runGame("rock");
        imageSelection()
-       displayRockImage();
+       displayPlayerImage();
+     
          
         
     })
     paper_selection.addEventListener("click",function(){
        runGame("paper");
        imageSelection();
-       dispalyPaperImage();
+       displayPlayerImage();
       
         
     }) 
     scissors_selection.addEventListener("click",function(){
        runGame("scissors");
        imageSelection();
-       displayScissorsImage();
+       displayPlayerImage();
      }) 
-
+ 
 }
 
 game();
@@ -89,44 +91,47 @@ function imageSelection(){
     let computerSelect = computerSelection();
     
     if (computerSelect === "rock"){
-        let rockImg = document.createElement("img");
+        
+     /*   let rockImg = document.createElement("img");
     rockImg.src = "assets/images/rock4.png";
-    document.getElementById("computer-image").appendChild(rockImg);
+    document.getElementById("computer-image").appendChild(rockImg); */
 
    } else if (computerSelection() === "paper"){
-    let rockImg = document.createElement("img");
+    
+  /*  let rockImg = document.createElement("img");
     rockImg.src = "assets/images/paper4.png";
-    document.getElementById("computer-image").appendChild(rockImg);
+    document.getElementById("computer-image").appendChild(rockImg); */
 
    } else if (computerSelect === "scissors"){
-    let rockImg = document.createElement("img");
+   /* let rockImg = document.createElement("img");
     rockImg.src = "assets/images/scissors4.png";
-    document.getElementById("computer-image").appendChild(rockImg);
+    document.getElementById("computer-image").appendChild(rockImg); */
 
    } 
 } 
 
-function displayRockImage(){
+function displayPlayerImage(){
+
+    rock_selection.addEventListener("click", () =>{
+        img.src = "assets/images/rock4.png";
+    })
      
-let rockImg = document.createElement("img");
+    paper_selection.addEventListener("click", () =>{
+        img.src = "assets/images/paper4.png";
+    })
+
+    scissors_selection.addEventListener("click", () =>{
+        img.src = "assets/images/scissors4.png";
+    })
+
+    
+    
+/*let rockImg = document.createElement("img");
     rockImg.src = "assets/images/rock4.png";
-    document.getElementById("player-image").appendChild(rockImg);
+    document.getElementById("player-image").appendChild(rockImg); */
 }
 
-function dispalyPaperImage(){
-    
-    document.getElementById("player-image")
-    let paperImg = document.createElement("img");
-    paperImg.src = "assets/images/paper4.png";
-         document.getElementById("player-image").appendChild(paperImg);
-}
 
-function displayScissorsImage(){
-    
-    let scissorsImg = document.createElement("img");
-    scissorsImg.src = "assets/images/scissors4.png";
-    document.getElementById("player-image").appendChild(scissorsImg);
-}
    
 function incrementPlayerWin(){
     

@@ -61,7 +61,7 @@ function checkWinner (playerChoice, computerChoice) {
     //Check for Rock
     if (playerChoice === "rock") {
       if (computerChoice === "scissors") {
-        displayResult.textContent = "Player Wins";
+        displayResult.textContent = "Youu Wins!!";
         pScore++;
         scoreResults();
         return;
@@ -80,7 +80,7 @@ function checkWinner (playerChoice, computerChoice) {
         scoreResults();
         return;
       } else {
-        displayResult.textContent = "Player Wins";
+        displayResult.textContent = "Youu Win!!";
         pScore++;
         scoreResults();
         return;
@@ -94,7 +94,7 @@ function checkWinner (playerChoice, computerChoice) {
         scoreResults();
         return;
       } else {
-        displayResult.textContent = "Player Wins";
+        displayResult.textContent = "Youu Win!!";
         pScore++;
         scoreResults();
         return;

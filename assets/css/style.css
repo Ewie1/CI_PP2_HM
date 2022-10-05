@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: none;
     box-sizing: border-box;
 }
 
@@ -12,7 +13,7 @@ header {
     font-size: 2rem;
 }
 
-body {
+.game-area {
     background-color: brown; 
     text-align: center; 
     font-family: 'Indie Flower', sans-serif;
@@ -72,4 +73,14 @@ body {
 #play-message{
     font-size: 1rem;
     color: white;
+}
+
+footer{
+    background-color: black;
+}
+
+@media screen and (max-width: 1200px) {
+
+
+    
 }

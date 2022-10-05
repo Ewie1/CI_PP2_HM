@@ -17,6 +17,7 @@ header {
     background-color: brown; 
     text-align: center; 
     font-family: 'Indie Flower', sans-serif;
+    
 }
 
 .result{
@@ -25,10 +26,11 @@ header {
 }
 
 .score-count {
-    display: grid;
+  /*  display: grid; */
+    display:inline;
     justify-content: center;
-    grid-template-columns: repeat(2, 2fr);
-    font-size: 2rem;
+ /*   grid-template-columns: repeat(2, 2fr); */
+    font-size: 2rem; 
 }
 
 .score-result{
@@ -75,12 +77,12 @@ header {
     color: white;
 }
 
-footer{
-    background-color: black;
-}
 
 @media screen and (max-width: 1200px) {
 
-
+header{
+    
+    
+}
     
 }

@@ -24,11 +24,12 @@ function playGame(){
                 
 
                 //Call checkWinner here
-              checkWinner(this.textContent, computerChoice);
+              checkWinner(this.id, computerChoice);
                 
 
                 //Function to display selected images
-            playerHand.src = `assets/images/${this.textContent}.png`;
+            playerHand.src = `assets/images/${this.id}.png`;
+            console.log(this.id)
           computerHand.src = `assets/images/${computerChoice}.png`;
             });
        
@@ -42,8 +43,8 @@ function scoreResults (){
   let playerScore = document.getElementById("player-score");
   let computerScore = document.getElementById("computer-score");
   playerScore.innerText = pScore;
-  computerScore.innerText = cScore;
-}
+  computerScore.innerText = cScore; 
+} 
 
 
 
@@ -90,12 +91,12 @@ function checkWinner (playerChoice, computerChoice) {
       if (computerChoice === "rock") {
         displayResult.textContent = "Computer Wins";
         cScore++;
-        updateScore();
+        scoreResults();
         return;
       } else {
         displayResult.textContent = "Player Wins";
         pScore++;
-        updateScore();
+        scoreResults();
         return;
       }
     }

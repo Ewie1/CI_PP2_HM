@@ -46,7 +46,7 @@ let imageArray =["rock.png", "paper.png", "scissors.png"];
        displayPlayerImage();
        
      }) 
- 
+ //Call all functions here
 }
 
 game();
@@ -60,16 +60,19 @@ function runGame(playSelections){
         case "paperrock":
         case "scissorspaper":
          incrementPlayerWin();
+         displayPlayerImage();
             break;
         case "scissorsrock":
         case "rockpaper":
         case "paperscissors":
            incrementPlayerLose(); 
+           displayPlayerImage();
             break;
         case "scissorsscissors":
         case "rockrock":
         case "paperpaper":
             incrementDraw();
+            displayPlayerImage();
            break;                      
         
     }
@@ -85,10 +88,10 @@ function runGame(playSelections){
 
     let selections = ["rock" , "paper", "scissors"];
    
-  /*  let comptSelection = Math.floor(Math.random() * imageArray.length);
+  /* let comptSelection = Math.floor(Math.random() * imageArray.length);
     selected_image = imageArray[comptSelection];
-    document.getElementById("computer-image").src = `assets/images/${selected_image}`*/
-    let compSelection = Math.floor(Math.random() * 3);
+    document.getElementById("computer-image").src = `assets/images/${selected_image}`; */
+    let compSelection = Math.floor(Math.random() * 3); 
   //  return [compSelection];
     return selections[compSelection]; 
 }
@@ -101,11 +104,11 @@ function imageSelection(){
     selected_image = imageArray[comptSelection];
     document.getElementById("computer-image").src = `assets/images/${selected_image}`
 
-   /* let computerSelect = computerSelection();
+    let computerSelect = computerSelection();
     
     if (computerSelect === "rock"){
 
-     /*   let rockImg = document.createElement("img");
+       let rockImg = document.createElement("img");
     rockImg.src = "assets/images/rock4.png";
     document.getElementById("computer-image").appendChild(rockImg); 
 
@@ -116,11 +119,11 @@ function imageSelection(){
     document.getElementById("computer-image").appendChild(rockImg); 
 
    } else if (computerSelect === "scissors"){
-   /* let rockImg = document.createElement("img");
+    let rockImg = document.createElement("img");
     rockImg.src = "assets/images/scissors4.png";
     document.getElementById("computer-image").appendChild(rockImg); 
 
-   } */
+   } 
 } 
 
 function displayPlayerImage(){

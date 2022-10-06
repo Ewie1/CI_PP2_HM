@@ -1,108 +1,503 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock Paper Scissors
+(Developer: Ewart Hestick)
 
-Welcome Ewie1,
+![Mockup image](docs/am-i-responsive.PNG)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[Live webpage](https://ewie1.github.io/CI_PP2_RPS/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Table of Content
 
-## Gitpod Reminders
+1. [Project Goals](#project-goals)
+    1. [User Goals](#user-goals)
+    2. [Site Owner Goals](#site-owner-goals)
+2. [User Experience](#user-experience)
+    1. [Target Audience](#target-audience)
+    2. [User Requrements and Expectations](#user-requrements-and-expectations)
+    3. [User Stories](#user-stories)
+3. [Design](#design)
+    1. [Design Choices](#design-choices)
+    2. [Colour](#colours)
+    3. [Fonts](#fonts)
+    4. [Structure](#structure)
+    5. [Wireframes](#wireframes)
+4. [Technologies Used](#technologies-used)
+    1. [Languages](#languages)
+    2. [Frameworks & Tools](#frameworks-&-tools)
+5. [Features](#features)
+6. [Testing](#validation)
+    1. [HTML Validation](#HTML-validation)
+    2. [CSS Validation](#CSS-validation)
+    3. [Accessibility](#accessibility)
+    4. [Performance](#performance)
+    5. [Device testing](#performing-tests-on-various-devices)
+    6. [Browser compatibility](#browser-compatability)
+    7. [Testing user stories](#testing-user-stories)
+8. [Bugs](#Bugs)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
+11. [Acknowledgements](#acknowledgements)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Project Goals 
+ 
 
-`python3 -m http.server`
+### User Goals
 
-A blue button should appear to click: _Make Public_,
+- Find a gym with a good atmosphere and equipment
+- Find a gym that have good price and membership packages
+- Find a gym that offers more that equipment but comfort and accessiblity
+- Find a gym with happy and experienced trainers
+- Find a gym that help you get healthy result 
+- Easy signup
+- Location information
 
-Another blue button should appear to click: _Open Browser_.
+### Site Owner Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- Introduce a gym that care more about people and health
+- Introduce the special programs the gym have to offer
+- Transmit the reasons, intention of the gym
+- Transmit gym location and contact information
+- Present gym fees and different types of memebership offered 
+- Make signing up simple
+- Provide insites about the gym atmosphere and equipments
+- Opening and closing time information
+- Where the gym is located
 
-A blue button should appear to click: _Make Public_,
+## User Experience
 
-Another blue button should appear to click: _Open Browser_.
+### Target Audience
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- People who need a different gym experience
+- People who want good health
+- People who want to be fit 
+- Student, Retiries
+- People who need a guide for work and meal plans
+- Athletes
 
-To log into the Heroku toolbelt CLI:
+### User Reqirements and Expectaions
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- Accessable site
+- Navigations that are simple to use
+- Clear images that gives a vision of the gym structure
+- Information on what is different from other gyms
+- Clear information on location and opening and closing time
+- A Warm welcome feel 
+- Vision of health and happiness
+- A vision of fittness
+- A vision of motivation
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### User Stories
 
-------
+#### First-time User 
+1. As  a first time user I expect a bright feel energetic gym feel
+2. I want to know the loaction of the gym
+3. I want to see the gym interior 
+4. I want to know what programs are avaiblable
 
-## Release History
+#### Returning User
+ 
+ 5. I want to know where to sign up
+ 6. As a returning user i want contact information
+ 7. I was to know the reason and the mission of the gym
+ 8. I want to know about the membership and options available
+ 9. I want to see the gym's social media followings 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+#### Site Owner 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+10. As a owner I want the users to not only sign up but have membership option
+12. As a owner I want user to have a cutomized 404 error page if the wedsite fail to load
+13. As a site owner I want users to leave comments upon sign up
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Design
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Design Choices
+This wedsite was designed to give a bright, energetic, and classy feel for people looking for a first time gym or want a gym change. The color contrast was chosen for a energetic feel. Images that promtes bright smiles, fitness a helpful  enviroment. Information that says you get more than your regular gym.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Colour
+The colors a bright orange and very dark blue which speakes enery and look good together. These two color also promotes accessiblity. It is one of the perfect color scheme for a gym.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Fonts
+The font style was chosen to give a warm gym and not to rough or macho. They give the website just enough to warm the eyes of all types of audiences. 
+Karla was set for the body font with sans serif as a default
+Mulish was used for some headings with Sans serif as a default
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Structure
+This website was structured with the gym logo which give a gym it character but also with the regular easy to use nav bar, a body of information and the regular footer which give the final characteristics of a funtional webpage. The wedsite has three pages:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- Home 
+- About page
+- Become a member page
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Wireframes
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+<details><summary>Home</summary>
+<img src="/docs/features/wireframes/wireframehomepage.png">
+<img src="/docs/features/wireframes/wireframehomepagepad.png">
+<img src="/docs/features/wireframes/wireframehomepagepadiphone.png">
+</details>
+<details><summary>About</summary>
+<img src="/docs/features/wireframes/wireframeaboutuspage.png">
+<img src="/docs/features/wireframes/wireframeaboutuspagepad.png">
+<img src="/docs/features/wireframes/wireframeaboutuspagepadiphone.png">
+</details>
+<details><summary>Signup</summary>
+<img src="/docs/features/wireframes/wireframesignuppage.png">
+<img src="/docs/features/wireframes/wireframesignuppagepad.png">
+<img src="/docs/features/wireframes/wireframesignuppagepadiphone.png">
+</details>
+<details><summary>404 page</summary>
+<img src="docs/features/wireframes/wireframe404.png">
+</details>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Technologies Used
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Languages
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- HTML
+- CSSc
 
-------
+### Frameworks & Tools
+- Git
+- GitHub
+- Gitpod
+- Tinypng
+- Balsamiq
+- Google Fonts
+- Font Awsome
+- Favicon<span>.</span>io
 
-## FAQ about the uptime script
+## Features
+The page consists of 3 pages and 11 sections
 
-**Why have you added this script?**
+### Logo and Navigation Bar
+- The logo and nav bar section is one of the difference maker. It have a stylish logo which every
+gym needs and also a navigation bar which allow the user to freely navigate between the three pages presented. Here you can also find a signup button which return user to get to the sigup page without the need to scroll. 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+![logo-and-nav](docs/features/menulogonavs.PNG)
 
-**How will this affect me?**
+### Hero
+- Here the hero image that describe everything a user need in a gym laughter, diversity and work. Along with giving a feel for what you get at the gym there is also a cover note with two questios to catch the users interest and want to know more about the gym.
+- User story covered: 1
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![heros](docs/features/heros.PNG) 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Gym Features
+- The gym features list is consist of the many progarms available for training and the comforts the gym offer. With this information the user can consider compare to there regular gyms which will help them in deciding to click that signup button.
+- User story covered: 4
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+![gym-features](docs/features/feature.PNG)
 
-**So….?**
+### Easy Nav
+- Easy nav is a simple buttton to have the user avoid scrolling up to get to the About Us page.
+- This faeture serves the purpose of allow the user to go throught the page smoothly finding all the gym information with out the need of scrolling back up to the menu bar but use the more about us button to get to the second page whicg contains more information about the gym.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![easy-nav](docs/features/easynav.PNG)
 
-**Can I opt out?**
+### Open Times
+- Open times are locate as we go down to give the user essentail information so they can  fit their schedule into the open times of the gym.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![opem-times](docs/features/opentimes.PNG)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Teaser Image
+- A simple image og the gym i like to call a teaser image of the interior of the gym so the user gets an idea of what to expect and what kind of enviroment the gym offers.
+- User story covered: 3
 
-**Anything more?**
+![interior-teaser](docs/features/teaser.PNG)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Map
+- The map which give the location for the gym with an easy click.
+- User story covered: 2
 
----
+![map](docs/features/map4.PNG)
 
-Happy coding!
+### Footer
+- This footer which is set to be informative, giving the gym's contact information, phone number and emial address to contact us. Along with this we also have the social media icon links in which the gym can be found on.
+- User story covered: 6 and 9
+
+
+![footer](docs/features/footer.PNG)
+
+### About Us
+- The About us section of the site located on the second page tells alot. We have the images on the left which shows some of the faetures of the gym complimenting the three paragraphs which explain who, why and the mission of the gym which i think make it stand out from the regular.
+- User story covered: 4 and 7
+
+![about-us](docs/features/aboutus.PNG)
+
+### Membership Cards
+- Membership Cards section can also be found on the second page showing the different memberships the gym have to offer student, retired or normal.
+- User story covered: 8
+
+![membership-cards](docs/features/membership.PNG)
+
+### Signup Form
+- The signup form is found on the last page which shows the needed information of entry, membership option drop down and a text area for any questions to quarries while signing up.
+- User story covered:5 and 11
+
+![signup-form](docs/features/signupform.PNG)
+
+### 404 Page
+- The 404 page displays when a user enters a URL that does not match. The main purpose of this page is to let users know that an error has occurred and they have the menu bar available to go back to the website. 
+The page is fully responsive on mobile and tablet.
+- User story covered: 11
+
+![404-page](docs/features/test-user-story/404page.PNG)
+
+## Validation
+
+### HTML Validation
+
+<details><summary>Home page</summary>
+<img src="/docs/features/wireframes/validations/indexhtml-validation.JPG">
+</details>
+<details><summary>About page</summary>
+<img src="/docs/features/wireframes/validations/trainhtml-validation.JPG">
+</details>
+<details><summary>Signup page</summary>
+<img src="/docs/features/wireframes/validations/signuphtml-validation.JPG">
+</details>
+<details><summary>404 page</summary>
+<img src="docs/features/wireframes/validations/validation404.PNG">
+</details>
+
+### CSS Validation
+
+<details><summary>Style</summary>
+<img src="/docs/features/wireframes/validations/stylecss-validation.JPG">
+</details>
+<details><summary>Whole page</summary>
+<img src="/docs/features/wireframes/validations/wholepagecss-validation.JPG">
+</details>
+
+### Accessibility
+
+<details><summary>Home</summary>
+<img src="/docs/features/wireframes/validations/accesssibility-home.PNG">
+</details>
+<details><summary>About Us</summary>
+<img src="/docs/features/wireframes/validations/accessibilty-about.PNG">
+</details>
+<details><summary>Become a Member</summary>
+<img src="/docs/features/wireframes/validations/accessibilty-signup.PNG">
+</details>
+
+### Performance 
+
+<details><summary>Home</summary>
+<img src="/docs/features/wireframes/validations/performance-homepage.PNG">
+</details>
+<details><summary>About Us</summary>
+<img src="/docs/features/wireframes/validations/performance-aboutuspage.PNG">
+</details>
+<details><summary>Become a Member</summary>
+<img src="/docs/features/wireframes/validations/performance-signuppage.PNG">
+</details>
+
+### Performing tests on various devices 
+
+- HP EllitBook
+- Amazon fire table 7
+- Samsung galaxy 20
+
+### Browser compatability
+
+- Tested on Goole Chrome
+- Tested Micrsoft Edge
+- Tested on Morzilla Firefox
+
+### Testing user stories
+
+1. As  a first time user I expect a bright feel energetic gym feel
+
+   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+   |-------------|------------|---------------------|-------------------|
+   | Color contrast | Bright color contrast and images with laughter |Website feels like the gym  | Works as expected |
+
+   <details><summary>Screenshots</summary>
+   <img src="docs/features/brightenergy.PNG">
+   </details>
+
+2.  As a firstime user I want to know the location of the gym
+
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Map | Scroll down on first page and click the google mag  | Goolge show gym location in the city | Works as expected |
+
+     <details><summary>Screenshots</summary>
+     <img src="docs/features/test-user-story/inkedlocatmap.jpg">
+     </details>
+
+3. As a first time user I want to see the gym interior
+   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+   |-------------|------------|---------------------|-------------------|
+   | Gym interior image | Scroll down on home page | Find pictures of the gym interior | Works as expected |
+    <details><summary>Screenshots</summary>
+    <img src="docs/features/test-user-story/intteaser.jpg">
+    </details>
+
+4. As a first time user I want to know what training programs are available 
+
+   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+   |-------------|------------|---------------------|-------------------|
+   | Trian with us and Gym comforts list | Scroll down on home page  | Readable intriguing list | Works as expected |
+    <details><summary>Screenshots</summary>
+    <img src="docs/features/test-user-story/inkedfeatureslist.jpg">
+    </details>
+
+5. As a returning user I want to know where to sign up
+   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+   |-------------|------------|---------------------|-------------------|
+   | Signup From | Cick signup button,Nav bar | Directed to signup page | Works as expected |
+
+    <details><summary>Screenshots</summary>
+    <img src="docs/features/signupform.PNG">
+    </details>
+
+6. As a returning user i want contact information   
+   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+   |-------------|------------|---------------------|-------------------|
+   | Footer  on all pages | On any page scroll to the footer | See phone number and email address | Works as expected |
+
+     <details><summary>Screenshots</summary>
+     <img src="docs/features/test-user-story/inkedcontactinfo1.jpg">
+     </details>
+
+7. As a returning user I was to know the reason and the mission of the gym
+
+   | **Feature** | **Action** | **Expected Result** | **Actual Result** |   
+   |-------------|------------|---------------------|-------------------|
+   | About Us pragraph | Navigate to the us page in menu bar  | Read  | Works as expected |
+
+     <details><summary>Screenshots</summary>
+     <img src="docs/features/test-user-story/inkedmenu-aboutusnav.jpg">
+     <img src="docs/features/aboutus.PNG">
+     </details>
+
+8. As a returning user I want to know about the membership and options available
+
+   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+   |-------------|------------|---------------------|-------------------|
+   | Membership Cards | Navigate to the About Uspage Scrooll down | Read | Works as expectd |
+
+     <details><summary>Screenshots</summary>
+     <img src="docs/features/test-user-story/inkedmenu-aboutusnav.jpg">
+     <img src="docs/features/test-user-story/inkedcards.jpg">
+     </details>
+
+9. As a returning user, I want to see the gym's social media followings 
+
+   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+   |-------------|------------|---------------------|-------------------|
+   | Footer - social media section | On any page scroll to the bottom | Click on social media links | Works as expected | 
+
+     <details><summary>Screenshots</summary>
+     <img src="docs/features/test-user-story/inkedsociallinks.jpg">
+     </details>
+
+
+10. As a siteowner I want the users to not only sign up but have membership option
+
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Signup Form | U Navigate sign up page click dropdown option| Choose from drop down option | Works as expected |
+
+    <details><summary>Screenshots</summary>
+    <img src="docs/features/test-user-story/inkedsignupnav.jpg">
+    <img src="/docs/features/test-user-story/inkedcardoptions.PNG">
+    </details>
+
+11. As a owner I want user to have a cutomized 404 error page if the wedsite fail to load
+
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | 404 error page | On non-matched URL| Choose from drop down option | Works as expected |
+
+    <details><summary>Screenshots</summary>
+    <img src="docs/features/test-user-story/404page.PNG">
+    </details>
+
+12. As a site owner I want users to leave comments upon sign up
+
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Signup form | Navigate to signup page | Leave comments | Works as expected |
+
+     <details><summary>Screenshots</summary>
+     <img src="docs/features/test-user-story/inkedsignupnav.jpg">
+     <img src="docs/features/comments.PNG">
+     </details>
+    
+## Bugs
+  List of bugs found and fixes used ti mitigate them.
+
+- Bug: the first page had overflow to the right of the page.
+  Fix: with from the slack community i was refered to unicorn revealer which showed my opentimes width was too much. Adjusted this and issue was fixed
+- Bug: during accessibilty test my good practice points were low
+  Fix: using the unicorn revealer again imanaged to find my logo image had margin space and my about us text had border radius value that were unneccessary. Adjusted these issues and my score got better
+- Bug: during html validation signup.html error, signup form "for" value and "id" value were not matching  
+    Fix: Change both value to the same which rectified error
+- Bug: html validation for index.hmtl warnings for lack of heading h1-h6 in section tags
+  Fix: removed unneccesary section tags
+- Bug: html validation error for all html file h1-h6 heading, some sequence wer skipped h2-h4 and    h2-h5 
+   Fix: changed heading tag for all html file to the correct sequences
+- Bug: Wave error for color contrast on navbar and more about us button "deep orange and very dark blue"
+  Fix: change to a slightly brighter orange to mitigate issue,
+- Bug: Wave error for color conflicting contrast with cover text for the hero image on the home page
+  Fix: Add a lite background overlay wrapped in a div tag to mitigate issue
+- Bug: loading performance on the home page was low due to hero image loading time
+  Fix: replaced hero-image 
+- Bug: background image for the "Become a Member" page look streched with distorted pixels
+  Fix: Replaced "Become a Member" page backgroung image
+- Bug: hero image overlay half way over the image  onthe big screen and overflowing into the ethos section
+   Fix: adjusted padding bottom and confirmed issue was no longer present
+   
+
+## Deployment
+The website was deployed using GitHub Pages by following these steps:
+1. In the GitHub repository navigate to the Settings tab
+2. On the left hand menu select Pages
+3. For the source select Branch: master
+4. After the webpage refreshes automaticaly you will se a ribbon on the top saying: "Your site is published at "https://ewie1.github.io/CI_PP1_GLG/index.html"
+
+You can for fork the repository by following these steps:
+1. Go to the GitHub repository
+2. Click on Fork button in upper right hand corner
+
+You can clone the repository by following these steps:
+1. Go to the GitHub repository 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)  
+7. Press Enter to create your local clone.
+
+## Credits
+
+### Media
+
+Media images were referenced from <a href="https://www.pexels.com/">Pexels</a> , <a href="https://unsplash.com/">Upsplash</a> and <a href="http://www.freepik.com/">Freepik</a>. 
+
+- [404-background](assets/images/404er.jpeg): <a href=" https://www.pexels.com/photo/an-apple-and-a-dumbbell-on-a-clipboard-8154260/" >Pexels</a>
+  Photo by:  <a href="https://www.pexels.com/@alesiakozik/">Alesia Kozik</a>
+- [signup-page-background](assets/images/signupimage.jpeg): <a href="https://www.pexels.com/photo/          personal-male-trainer-with-overweight-female-client-in-fitness-center-6455927/">Pexels</a>
+  Photo by:  <a href="https://www.pexels.com/@julia-larson/">Julian Larson</a>
+- [hero-image](assets/images/heroimage.jpg): <a href="https://www.freepik.com/premium-photo/sport-couple-doing-plank-exercise-workout-fitness-centrum-man-woman-practicing-plank-gym_17801349.htm">Freepik</a>
+  Photo by: <a href= "https://www.freepik.com/author/weyo">Weyo</a>
+- [crossfit-image](assets/images/crossfitsmall.jpg): <a href="https://unsplash.com/photos/h3D-RRvxfqE">Unsplash</a>
+  Photo by: <a href="https://unsplash.com/@bastien_plu">Bastien Plu</a>
+- [trainer-image](assets/images/trainer.jpeg): <a href="https://www.pexels.com/photo/ethnic-woman-exercising-with-battling-ropes-near-male-trainer-6455771/">Pexels</a>
+  photo by: <a href= "https://www.pexels.com/@julia-larson/">Julian Larson</a>
+
+
+### Code
+ - My HTML code from lessons and formats from the html module and walk through project which then evolved into my owm structure as i gain more knowledge by trail and error.
+ - My CSS code was also built on the concept of trail and error, google W3School wedsite tips.
+
+
+
+## Acknowledgements
+- Tanks and acknowlegement goes to my mentor Mo Shami great guidance.
+- Acknowledge my brother Addan Mc Collin for support form a user's veiw
+- Thanks to my girlfriend Hiba Salem for support and input on a user veiw
+- Thankful to the Slack team for tips

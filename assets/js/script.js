@@ -96,7 +96,7 @@ function checkWinner (playerChoice, computerChoice) {
         displayResult.textContent = "You lose!";
         cScore++;
         scoreResults();
-        restScore();
+        
         return;
       } else {
         displayResult.textContent = "Youu Win!!";

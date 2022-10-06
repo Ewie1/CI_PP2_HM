@@ -137,7 +137,7 @@ div.fadeOut {
     pointer-events: none;
 }
   
-  div.fadeIn {
+div.fadeIn {
     opacity: 1;
     pointer-events: all;
 }

@@ -2,16 +2,21 @@
 function main(){
     let pScore = 0;
     let cScore = 0;
+
+
+
+
     // test code
 function startGame ()  {
       let playBtn = document.querySelector(".intro button");
       let introScreen = document.querySelector(".intro");
-      let match = document.getElementsByClassName("game-fade");
+      let match = document.querySelector(".game");
   
       playBtn.addEventListener("click", () => {
         introScreen.classList.add("fadeOut");
-        match.DOMTokenList.add("fadeIn");
+        match.classList.add("fadeIn");
       });
+      console.log();
     };
 
 
@@ -54,7 +59,10 @@ function scoreResults (){
   let computerScore = document.getElementById("computer-score");
   playerScore.innerText = pScore;
   computerScore.innerText = cScore; 
+
 } 
+
+
 
 
 
@@ -88,11 +96,13 @@ function checkWinner (playerChoice, computerChoice) {
         displayResult.textContent = "Computer Wins";
         cScore++;
         scoreResults();
+        restScore();
         return;
       } else {
         displayResult.textContent = "Youu Win!!";
         pScore++;
         scoreResults();
+        
         return;
       }
     }

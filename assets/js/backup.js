@@ -170,3 +170,38 @@ function removeImage(){
       selected.removeChild(selected.firstElementChild);
 }
 
+
+
+
+
+
+
+let pScore = 0;
+let cScore = 0;
+
+let user = ["player-score", "computer-score"];
+
+
+let isGameOver = (score) => {
+  if (pScore === 10 || cScore === 10) {
+    return true;
+  }
+  return false;
+}
+
+function gameOver() {
+  let winner = pScore === 10 ? user[0] : user[1];
+  console.log(winner);
+}
+
+function theFunctionThatChangesTheScores() {
+  // after the code that changes the score
+  if ( isGameOver() ) {
+    // you can code in this block, but ideally.
+    // create another function and call it:
+    return gameOver();
+  }
+  return console.log("game is still on");
+}
+
+theFunctionThatChangesTheScores();

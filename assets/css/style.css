@@ -102,6 +102,20 @@ header {
     display: inline-block;
 }
 
+/*.player-image {
+    padding-left: 120px;
+    padding-right: 120px;
+    transform: scale(0.6); 
+    display: inline-block;
+}
+
+.computer-image {
+    padding-left: 120px;
+    padding-right: 120px;
+    transform: scale(0.6); 
+    display: inline-block;
+} */
+
 /*Add color and position the selector icons*/
 .selections {
     padding: 20px;

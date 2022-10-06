@@ -7,17 +7,51 @@
   /*  box-sizing: border-box; */
 }
 
-header {
-    background-color: white;
-   padding-bottom: 15px; 
-    font-size: 2rem;
-}
-
 body {
     background-color: brown; 
     text-align: center; 
     font-family: 'Indie Flower', sans-serif;
 }
+
+header {
+    background-color: white;
+   padding-bottom: 15px; 
+    font-size: 2rem;
+}
+/*Test code*/
+.intro {
+    color: rgb(224, 224, 224);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+  }
+  
+  .intro h1 {
+    font-size: 50px;
+  }
+  .intro button {
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: none;
+    color: rgb(224, 224, 224);
+    font-size: 20px;
+    background: rgb(45, 117, 96);
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+ /* .game-fade {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease 0.5s;
+  } */
+/*test code ends*/
 
 .result{
     height: 10px;
@@ -91,7 +125,6 @@ header {
     font-size: 20px;
     padding: 10px;
 }
-
 
 .score-count {
     padding-left: 50px;

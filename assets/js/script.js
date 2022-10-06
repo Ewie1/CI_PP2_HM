@@ -2,7 +2,17 @@
 function main(){
     let pScore = 0;
     let cScore = 0;
-
+    // test code
+function startGame ()  {
+      let playBtn = document.querySelector(".intro button");
+      let introScreen = document.querySelector(".intro");
+      let match = document.getElementsByClassName("game-fade");
+  
+      playBtn.addEventListener("click", () => {
+        introScreen.classList.add("fadeOut");
+        match.DOMTokenList.add("fadeIn");
+      });
+    };
 
 
 
@@ -105,6 +115,7 @@ function checkWinner (playerChoice, computerChoice) {
 
 }
 // Call all innerfunctions
+startGame();
 playGame();
 }
 

@@ -84,7 +84,7 @@ function checkWinner (playerChoice, computerChoice) {
         scoreResults();
         return;
       } else {
-        displayResult.textContent = "You lose";
+        displayResult.textContent = "You lose!";
         cScore++;
         scoreResults();
         return;
@@ -93,7 +93,7 @@ function checkWinner (playerChoice, computerChoice) {
     //Check for Paper
     if (playerChoice === "paper") {
       if (computerChoice === "scissors") {
-        displayResult.textContent = "You lose";
+        displayResult.textContent = "You lose!";
         cScore++;
         scoreResults();
         restScore();
@@ -109,7 +109,7 @@ function checkWinner (playerChoice, computerChoice) {
     //Check for Scissors
     if (playerChoice === "scissors") {
       if (computerChoice === "rock") {
-        displayResult.textContent = "You lose";
+        displayResult.textContent = "You lose!";
         cScore++;
         scoreResults();
         return;

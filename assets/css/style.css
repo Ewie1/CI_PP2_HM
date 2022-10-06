@@ -1,11 +1,14 @@
+
+/*Add link to font style*/
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+/*Removed default settings*/
 * {
     margin: 0;
     padding: 0;
     border: none;
-  /*  box-sizing: border-box; */
 }
+
 /*Style the body color, add font style and center all text*/
 body {
     background-color: brown; 
@@ -29,20 +32,19 @@ header {
     transition: opacity 1s ease;
     height: 50px;
     margin-bottom: -170px;
-    
-  }
+}
   
-  .intro h1 {
+.intro h1 {
     font-size: 15px;
-  }
+}
 /*Add style for the intro page image*/
-  .intro img{
+.intro img{
     margin-top: 30px;
     height: 200px;
     transform: scale(0.4);
-  }
+}
 /*Add style for start game button*/
-  .intro button {
+.intro button {
     width: 150px;
     height: 50px;
     background: none;
@@ -53,9 +55,9 @@ header {
     border-radius: 3px;
     margin-top: -50px;
     cursor: pointer;
-  }
+}
   /*Add peramater and style to accomdate the game body fade*/
-  .game {
+.game {
     transition: opacity 0.0s ease 0.5s;
      padding-top: 400px;
      height: 50px;
@@ -88,6 +90,18 @@ header {
     color:green;
 }
 
+/*Set height for selected displayed images */
+.image {
+    height: 280px; 
+}
+/*Styled and position selected displayed images */
+.result-selection{
+    padding-left: 120px;
+    padding-right: 120px;
+    transform: scale(0.8); 
+    display: inline-block;
+}
+
 /*Add color and position the selector icons*/
 .selections {
     padding: 20px;
@@ -111,39 +125,24 @@ header {
     background-color: saddlebrown;
 }
 
-.image {
-    height: 280px; 
- }
-
-.result-selection{
-    padding-left: 120px;
-    padding-right: 120px;
-    opacity: 1;
-    transform: scale(0.8); 
-    display: inline-block;
-
-    
-}
-
+/*Style play message below the icon selectors*/
 #play-message{
     font-size: 1rem;
     color: white;
- /*   padding:20px;
-    margin-top: 20px; */
 }
  
-/*test code*/
+/*Add fadein and fadeout perameters*/
 div.fadeOut {
     opacity: 0;
     pointer-events: none;
-  }
+}
   
   div.fadeIn {
     opacity: 1;
     pointer-events: all;
-  }
+}
 
-
+/*Add style to adjust elements to fit screens 1200px*/
 @media screen and (max-width: 1200px) {
  
 header {
@@ -168,7 +167,7 @@ header {
     transform: scale(0.6);
 }
 }
-
+/*Add style to adjust elments to fit screens 600px*/
 @media screen and (max-width: 600px ){
 
     header {

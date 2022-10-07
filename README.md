@@ -1,7 +1,7 @@
 # Rock Paper Scissors
 (Developer: Ewart Hestick)
 
-![Mockup image](docs/am-i-responsive.PNG)
+![Mockup image](/workspace/CI_PP2_RPS/docs/features/am-i-responsive.png)
 
 [Live webpage](https://ewie1.github.io/CI_PP2_RPS/)
 
@@ -203,26 +203,14 @@ gym needs and also a navigation bar which allow the user to freely navigate betw
 
 ### HTML Validation
 
-<details><summary>Home page</summary>
-<img src="/docs/features/wireframes/validations/indexhtml-validation.JPG">
-</details>
-<details><summary>About page</summary>
-<img src="/docs/features/wireframes/validations/trainhtml-validation.JPG">
-</details>
-<details><summary>Signup page</summary>
-<img src="/docs/features/wireframes/validations/signuphtml-validation.JPG">
-</details>
-<details><summary>404 page</summary>
-<img src="docs/features/wireframes/validations/validation404.PNG">
+<details><summary>Game page</summary>
+<img src="/workspace/CI_PP2_RPS/docs/validations/indexhtmlvalidation.png">
 </details>
 
 ### CSS Validation
 
 <details><summary>Style</summary>
-<img src="/docs/features/wireframes/validations/stylecss-validation.JPG">
-</details>
-<details><summary>Whole page</summary>
-<img src="/docs/features/wireframes/validations/wholepagecss-validation.JPG">
+<img src="/workspace/CI_PP2_RPS/docs/validations/cssvalidation.png">
 </details>
 
 ### Accessibility

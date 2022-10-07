@@ -116,29 +116,24 @@
 
 ### Structure
 
-- Home 
-- About page
-- Become a member page
+- Into 
+- Game page
+- Game over and Restart page
 
 ### Wireframes
 
-<details><summary>Home</summary>
-<img src="/docs/features/wireframes/wireframehomepage.png">
-<img src="/docs/features/wireframes/wireframehomepagepad.png">
-<img src="/docs/features/wireframes/wireframehomepagepadiphone.png">
+<details><summary>Into</summary>
+<img src="/workspace/CI_PP2_RPS/docs/wireframes/intro-page.png"> 
 </details>
-<details><summary>About</summary>
-<img src="/docs/features/wireframes/wireframeaboutuspage.png">
-<img src="/docs/features/wireframes/wireframeaboutuspagepad.png">
-<img src="/docs/features/wireframes/wireframeaboutuspagepadiphone.png">
+<details><summary>Game</summary>
+<img src="/workspace/CI_PP2_RPS/docs/wireframes/game-page.png">
+
 </details>
-<details><summary>Signup</summary>
-<img src="/docs/features/wireframes/wireframesignuppage.png">
-<img src="/docs/features/wireframes/wireframesignuppagepad.png">
-<img src="/docs/features/wireframes/wireframesignuppagepadiphone.png">
+<details><summary>Game over and Restart page</summary>
+<img src="">
 </details>
 <details><summary>404 page</summary>
-<img src="docs/features/wireframes/wireframe404.png">
+<img src="">
 </details>
 
 
@@ -147,7 +142,7 @@
 ### Languages
 
 - HTML
-- CSSc
+- CSS
 
 ### Frameworks & Tools
 - Git
@@ -160,80 +155,49 @@
 - Favicon<span>.</span>io
 
 ## Features
-The page consists of 3 pages and 11 sections
+The page consists of 3 pages and 9 sections
 
-### Logo and Navigation Bar
+### Header Display
 - The logo and nav bar section is one of the difference maker. It have a stylish logo which every
 gym needs and also a navigation bar which allow the user to freely navigate between the three pages presented. Here you can also find a signup button which return user to get to the sigup page without the need to scroll. 
 
 ![logo-and-nav](docs/features/menulogonavs.PNG)
 
-### Hero
+### Intro btn and Image
 - Here the hero image that describe everything a user need in a gym laughter, diversity and work. Along with giving a feel for what you get at the gym there is also a cover note with two questios to catch the users interest and want to know more about the gym.
 - User story covered: 1
 
 ![heros](docs/features/heros.PNG) 
 
-### Gym Features
+### Game results
 - The gym features list is consist of the many progarms available for training and the comforts the gym offer. With this information the user can consider compare to there regular gyms which will help them in deciding to click that signup button.
 - User story covered: 4
 
 ![gym-features](docs/features/feature.PNG)
 
-### Easy Nav
+### Score Count
 - Easy nav is a simple buttton to have the user avoid scrolling up to get to the About Us page.
 - This faeture serves the purpose of allow the user to go throught the page smoothly finding all the gym information with out the need of scrolling back up to the menu bar but use the more about us button to get to the second page whicg contains more information about the gym.
 
 ![easy-nav](docs/features/easynav.PNG)
 
-### Open Times
+### Selected Images
 - Open times are locate as we go down to give the user essentail information so they can  fit their schedule into the open times of the gym.
 
 ![opem-times](docs/features/opentimes.PNG)
 
-### Teaser Image
+### Selection btns
 - A simple image og the gym i like to call a teaser image of the interior of the gym so the user gets an idea of what to expect and what kind of enviroment the gym offers.
 - User story covered: 3
 
 ![interior-teaser](docs/features/teaser.PNG)
 
-### Map
+### Restart Game
 - The map which give the location for the gym with an easy click.
 - User story covered: 2
 
 ![map](docs/features/map4.PNG)
 
-### Footer
-- This footer which is set to be informative, giving the gym's contact information, phone number and emial address to contact us. Along with this we also have the social media icon links in which the gym can be found on.
-- User story covered: 6 and 9
-
-
-![footer](docs/features/footer.PNG)
-
-### About Us
-- The About us section of the site located on the second page tells alot. We have the images on the left which shows some of the faetures of the gym complimenting the three paragraphs which explain who, why and the mission of the gym which i think make it stand out from the regular.
-- User story covered: 4 and 7
-
-![about-us](docs/features/aboutus.PNG)
-
-### Membership Cards
-- Membership Cards section can also be found on the second page showing the different memberships the gym have to offer student, retired or normal.
-- User story covered: 8
-
-![membership-cards](docs/features/membership.PNG)
-
-### Signup Form
-- The signup form is found on the last page which shows the needed information of entry, membership option drop down and a text area for any questions to quarries while signing up.
-- User story covered:5 and 11
-
-![signup-form](docs/features/signupform.PNG)
-
-### 404 Page
-- The 404 page displays when a user enters a URL that does not match. The main purpose of this page is to let users know that an error has occurred and they have the menu bar available to go back to the website. 
-The page is fully responsive on mobile and tablet.
-- User story covered: 11
-
-![404-page](docs/features/test-user-story/404page.PNG)
 
 ## Validation
 

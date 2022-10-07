@@ -124,10 +124,13 @@
 
 <details><summary>Into</summary>
 <img src="/docs/wireframes/intro-page.png"> 
+<img src="/docs/wireframes/intro page ipad.png"> 
+<img src="/docs/wireframes/intro page iphone.png"> 
 </details>
 <details><summary>Game</summary>
 <img src="/docs/wireframes/game-page.png">
-
+<img src="/docs/wireframes/game page ipad.png">
+<img src="/docs/wireframes/game page iphone.png">
 </details>
 <details><summary>Game over and Restart page</summary>
 <img src="">

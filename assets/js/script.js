@@ -16,15 +16,14 @@ function startGame ()  {
         introScreen.classList.add("fadeOut");
         match.classList.add("fadeIn");
       });
-      console.log();
     };
 
 
 
 function playGame(){
     let options = document.querySelectorAll(".selections button");
-    let playerHand = document.querySelector(".player-image");
-    let computerHand = document.querySelector(".computer-image");
+    let playerSelection = document.querySelector(".player-image");
+    let computerSelection = document.querySelector(".computer-image");
 
     // Computer option
     let computerOptions =["rock", "paper", "scissors"];
@@ -43,9 +42,9 @@ function playGame(){
                 
 
                 //Function to display selected images
-            playerHand.src = `assets/images/${this.id}.png`;
+            playerSelection.src = `assets/images/${this.id}.png`;
             console.log(this.id)
-          computerHand.src = `assets/images/${computerChoice}.png`;
+          computerSelection.src = `assets/images/${computerChoice}.png`;
             });
        
        
@@ -61,10 +60,6 @@ function scoreResults (){
   computerScore.innerText = cScore; 
 
 } 
-
-
-
-
 
 //Function to determine winner or loser
 

@@ -400,11 +400,11 @@ gym needs and also a navigation bar which allow the user to freely navigate betw
    
 
 ## Deployment
-The website was deployed using GitHub Pages by following these steps:
+The game was deployed using GitHub Pages by following these steps:
 1. In the GitHub repository navigate to the Settings tab
 2. On the left hand menu select Pages
 3. For the source select Branch: master
-4. After the webpage refreshes automaticaly you will se a ribbon on the top saying: "Your site is published at "https://ewie1.github.io/CI_PP1_GLG/index.html"
+4. After the webpage refreshes automaticaly you will se a ribbon on the top saying: "Your site is published at "https://ewie1.github.io/CI_PP2_RPS/"
 
 You can for fork the repository by following these steps:
 1. Go to the GitHub repository

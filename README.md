@@ -1,7 +1,7 @@
 # Rock Paper Scissors
 (Developer: Ewart Hestick)
 
-![Mockup image](docs/features/am-i-responsive.png)
+![Mockup image](docs/am-i-responsive.png)
 
 [Live webpage](https://ewie1.github.io/CI_PP2_RPS/)
 

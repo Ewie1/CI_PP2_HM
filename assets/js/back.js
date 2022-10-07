@@ -1,24 +1,32 @@
+document.addEventListener("DOMContentLoaded", function() {
+    let options = document.querySelectorAll(".selections button");
+   
+  //  for (let i = 0; i < options.length; i++)
+    options.forEach(option => {
+        option.addEventListener("click", function(){
+            playGame();
+        })
+        })
+    
+ //   document.getElementById("").addEventListener("keydown", function(event) {
+ //       if (event.key === "Enter"){
+  //          checkAnswer()
+  //      }
+  //  })
+ 
+  //  runGame("addition");
+})
 
-function main(){
-    let pScore = 0;
-    let cScore = 0;
-
-
-
-
-    // test code
 function startGame ()  {
-      let playBtn = document.querySelector(".intro button");
-      let introScreen = document.querySelector(".intro");
-      let match = document.querySelector(".game");
-  
-      playBtn.addEventListener("click", () => {
-        introScreen.classList.add("fadeOut");
-        match.classList.add("fadeIn");
-      });
-    };
+    let playBtn = document.querySelector(".intro button");
+    let introScreen = document.querySelector(".intro");
+    let match = document.querySelector(".game");
 
-
+    playBtn.addEventListener("click", () => {
+      introScreen.classList.add("fadeOut");
+      match.classList.add("fadeIn");
+    });
+  };
 
 function playGame(){
     let options = document.querySelectorAll(".selections button");
@@ -29,8 +37,9 @@ function playGame(){
     let computerOptions =["rock", "paper", "scissors"];
 
    // for (let i = 0; i < options.length; i++)
-       options.forEach(option => {
-            option.addEventListener("click", function(){
+   //    options.forEach(option => {
+    //        option.addEventListener("click", function(){
+                //Computer choice
                 let computerNumber = Math.floor(Math.random() * 3);
                 let computerChoice = computerOptions[computerNumber];
                 
@@ -41,26 +50,10 @@ function playGame(){
                 
 
                 //Function to display selected images
-            playerSelection.src = `assets/images/${this.id}.png`;
-            console.log(this.id)
+            playerSelection.src = `assets/images/${this.textContent}.png`;
+        //    console.log(this.id)
           computerSelection.src = `assets/images/${computerChoice}.png`;
-            });
-       
-       
-    });
-};
-
-// Function to determine scores
-
-function scoreResults (){
-  let playerScore = document.getElementById("player-score");
-  let computerScore = document.getElementById("computer-score");
-  playerScore.innerText = pScore;
-  computerScore.innerText = cScore; 
-
-} 
-
-//Function to determine winner or loser
+}
 
 function checkWinner (playerChoice, computerChoice) {
     //Update Text
@@ -115,13 +108,6 @@ function checkWinner (playerChoice, computerChoice) {
       }
     }
 
-
+    startGame();
 
 }
-// Call all innerfunctions
-startGame();
-playGame();
-}
-
-// start game function
-main();

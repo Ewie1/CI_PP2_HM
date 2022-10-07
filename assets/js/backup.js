@@ -204,4 +204,3 @@ function theFunctionThatChangesTheScores() {
   return console.log("game is still on");
 }
 
-theFunctionThatChangesTheScores();

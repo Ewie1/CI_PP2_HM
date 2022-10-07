@@ -1,7 +1,7 @@
 # Rock Paper Scissors
 (Developer: Ewart Hestick)
 
-![Mockup image](/workspace/CI_PP2_RPS/docs/features/am-i-responsive.png)
+![Mockup image](docs/features/am-i-responsive.png)
 
 [Live webpage](https://ewie1.github.io/CI_PP2_RPS/)
 
@@ -123,7 +123,7 @@
 ### Wireframes
 
 <details><summary>Into</summary>
-<img src="/workspace/CI_PP2_RPS/docs/wireframes/intro-page.png"> 
+<img src="/docs/wireframes/intro-page.png"> 
 </details>
 <details><summary>Game</summary>
 <img src="/workspace/CI_PP2_RPS/docs/wireframes/game-page.png">

@@ -126,7 +126,7 @@
 <img src="/docs/wireframes/intro-page.png"> 
 </details>
 <details><summary>Game</summary>
-<img src="/workspace/CI_PP2_RPS/docs/wireframes/game-page.png">
+<img src="/docs/wireframes/game-page.png">
 
 </details>
 <details><summary>Game over and Restart page</summary>
@@ -204,22 +204,22 @@ gym needs and also a navigation bar which allow the user to freely navigate betw
 ### HTML Validation
 
 <details><summary>Game page</summary>
-<img src="/workspace/CI_PP2_RPS/docs/validations/indexhtmlvalidation.png">
+<img src="/docs/validations/indexhtmlvalidation.png">
 </details>
 
 ### CSS Validation
 
 <details><summary>Style</summary>
-<img src="/workspace/CI_PP2_RPS/docs/validations/cssvalidation.png">
+<img src="/docs/validations/cssvalidation.png">
 </details>
 
 ### Accessibility
 
 <details><summary>Home</summary>
-<img src="/docs/features/wireframes/validations/accesssibility-home.PNG">
+<img src="/validations/accesssibility-home.PNG">
 </details>
 <details><summary>About Us</summary>
-<img src="/docs/features/wireframes/validations/accessibilty-about.PNG">
+<img src="/validations/accessibilty-about.PNG">
 </details>
 <details><summary>Become a Member</summary>
 <img src="/docs/features/wireframes/validations/accessibilty-signup.PNG">
@@ -228,13 +228,13 @@ gym needs and also a navigation bar which allow the user to freely navigate betw
 ### Performance 
 
 <details><summary>Home</summary>
-<img src="/docs/features/wireframes/validations/performance-homepage.PNG">
+<img src="/validations/performance-homepage.PNG">
 </details>
 <details><summary>About Us</summary>
-<img src="/docs/features/wireframes/validations/performance-aboutuspage.PNG">
+<img src="/validations/performance-aboutuspage.PNG">
 </details>
 <details><summary>Become a Member</summary>
-<img src="/docs/features/wireframes/validations/performance-signuppage.PNG">
+<img src="/validations/performance-signuppage.PNG">
 </details>
 
 ### Performing tests on various devices 

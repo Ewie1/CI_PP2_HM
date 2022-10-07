@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
   //          checkAnswer()
   //      }
   //  })
- 
+ startGame();
   //  runGame("addition");
 })
 
@@ -108,6 +108,6 @@ function checkWinner (playerChoice, computerChoice) {
       }
     }
 
-    startGame();
+
 
 }

@@ -67,8 +67,6 @@
 - Bright images
 - Responsive features
 - Play game on varius devices
--
-
 
 ### User Stories
 
@@ -113,7 +111,9 @@ The font indie flower was chosen to give a relaxed feel to the game
 <img src="/docs/wireframes/game page iphone.png">
 </details>
 <details><summary>404 page</summary>
-<img src="">
+<img src="docs/wireframes/404 page.png">
+<img src="docs/wireframes/404 page ipad.png">
+<img src="docs/wireframes/404 page iphone.png">
 </details>
 
 

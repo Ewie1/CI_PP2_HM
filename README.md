@@ -116,13 +116,12 @@ The font indie flower was chosen to give a relaxed feel to the game
 <img src="docs/wireframes/404 page iphone.png">
 </details>
 
-
 ## Technologies Used
 
 ### Languages
-
 - HTML
 - CSS
+- JavaScript
 
 ### Frameworks & Tools
 - Git

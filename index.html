@@ -1,76 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--Link style sheet to html head-->
+    <meta name="description" content="Rock Paper Scissors game to pass time">
+    <meta name="keywords" content="rock, paper, scissors, game">
+    <!--Link style sheet to html head-->
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/apple-touch-icon.png">
-    
+
     <title>Rock Paper Scissors</title>
 </head>
+
 <body>
-    
- <!---  <div class="game-area"> -->
+    <!---  <div class="game-area"> -->
     <header>
-    <h1>Rock Paper Scissors</h1>
+        <h1>Rock Paper Scissors</h1>
     </header>
 
     <!--Intro div-->
     <div class="intro">
         <img src="assets/images/frontimage.png" alt="picture of rock, paper and scissors together">
         <button>Let's Play</button>
-      </div>
-
-      <!---Wrapped game elements in one singel div -->
-   <div class="game fadeOut">
-    <div id="result"> 
-        <p class="results">Fight!!</p>
     </div>
-    
-    <!--Add code for player and computer scores-->
+    <!---Wrapped game elements in one singel div -->
+    <div class="game fadeOut">
+        <div id="result">
+            <p class="results">Fight!!</p>
+        </div>
+        <!--Add code for player and computer scores-->
         <div>
-        <div class="score-count">
-            Player
-            <span id="player-score">0</span>
+            <div class="score-count">
+                Player
+                <span id="player-score">0</span>
+            </div>
+            <div class="score-count">
+                Computer
+                <span id="computer-score">0</span>
+            </div>
+            <div class="image">
+                <div class="result-selection"><img class="player-image" src="assets/images/rock.png"
+                        alt="picture of a rock"></div>
+                <div class="result-selection"><img class="computer-image" src="assets/images/rock.png"
+                        alt="picture of a rock"></div>
+            </div>
         </div>
-        <div class="score-count">
-            Computer
-            <span id="computer-score">0</span>
-        </div>
-        <div class="image">
-        <div class="result-selection" ><img class="player-image" src="assets/images/rock.png" alt="picture of a rock"></div>
-        <div class="result-selection" ><img class="computer-image" src="assets/images/rock.png" alt="picture of a rock"></div>
+        <!--Add code for Rock Paper Scissors selections-->
+        <div class="selections">
+            <button class="selection" id="rock" data-type="fist">
+                <img src="assets/images/rock.jpeg" alt="foldedfist">
+            </button>
+            <button class="selection" id="paper" data-type="open-hand">
+                <img src="assets/images/paper.jpeg" alt="openedhand">
+            </button>
+            <button class="selection" id="scissors" data-type="scissor-fingers">
+                <img src="assets/images/scissors.jpg" alt="scissorsfingers">
+            </button>
+            <p id="play-message">Make your move!</p>
         </div>
     </div>
-    
-    <!--Add code for Rock Paper Scissors selections-->
-    <div class="selections">
-        <button class="selection" id="rock" data-type="fist"> 
-            <img src="assets/images/rock.jpeg" alt="foldedfist">
-        </button>
-        <button class="selection" id="paper" data-type="open-hand">
-            <img src="assets/images/paper.jpeg" alt="openedhand">
-        </button>
-        <button class="selection" id="scissors" data-type="scissor-fingers">
-            <img src="assets/images/scissors.jpg" alt="scissorsfingers">
-        </button>
-        <p id="play-message">Make your move!</p>
-    </div>
-    </div>
-    <div class="restart-game fadeOut" >
+    <div class="restart-game fadeOut">
         <button class="restart" id="restart">Game Over!</button>
     </div>
     <footer>
-      <!---  <ah href="contact.html"  aria-label="Contact Us"><i class="fa-regular fa-envelope"></i></a> -->
         <a href="https://github.com/Ewie1/CI_PP2_RPS" target="_blank" rel="noopener"
-        aria-label="The website Github page (opens in a new tab)"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="Visit us on LinkedIn (opens in new tab)"><i class="fab fa-linkedin"></i></a>
+            aria-label="The website Github page (opens in a new tab)"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener"
+            aria-label="Visit us on LinkedIn (opens in new tab)"><i class="fab fa-linkedin"></i></a>
     </footer>
     <script src="https://kit.fontawesome.com/4847b8087f.js" crossorigin="anonymous"></script>
     <!--Link javascript to html body-->
     <script src="assets/js/game.js"></script>
 </body>
+
 </html>

@@ -8,6 +8,7 @@ function main(){
     winGame();
     loseGame();
     gameOver();
+    restartGame();
       // funtion to fade intro page
 function gameIntro (){
       let playBtn = document.querySelector(".intro button");
@@ -128,6 +129,17 @@ function gameOver(){
  for (let i = 0; i < options.length; i++){
           options[i].addEventListener("click", function(){})
         }
+}
+
+function restartGame(){
+  let playAgain = document.querySelector(".restart-game button");
+      let restartScreen = document.querySelector(".restart-game");
+      let match = document.querySelector(".game");
+  
+      playAgain.addEventListener("click", function(){
+        restartScreen.classList.add("fadeOut");
+        match.classList.add("fadeIn");
+      }); 
 }
   }
 // call main function

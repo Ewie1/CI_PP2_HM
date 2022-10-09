@@ -54,7 +54,7 @@ function checkWinner (playerSelection, computerSelection) {
     let displayResult = document.querySelector(".results");
     //Checking for a tie
     if (playerSelection === computerSelection) {
-      displayResult.textContent = "It is a tie";
+      displayResult.textContent = "Draw";
       return;
     }
     //Check for Rock

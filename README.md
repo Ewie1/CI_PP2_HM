@@ -56,23 +56,19 @@
 
 ### Target Audience
 
-- 
-- 
--  
-- 
-- 
-- 
+- This game is build for the simple minded audience
+- Audience who just want something simple to pass time 
+- Younger Audience whi like cool images 
+
 
 ### User Reqirements and Expectaions
 
+- Simple understanding
+- Bright images
+- Responsive features
+- Play game on varius devices
 -
--
-- 
-- 
--
-- 
-- 
-- 
+
 
 ### User Stories
 
@@ -86,8 +82,6 @@
  6. See a final score
  7. Have a game over and restart game option
 
-
-4. 
 
 #### Returning User
  

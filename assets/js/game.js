@@ -61,11 +61,15 @@ function checkWinner (playerSelection, computerSelection) {
         displayResult.textContent = "Youu Wins!!";
         pScore++;
         scoreResults();
+        winGame();
+        loseGame();
         return;
       } else if (playerSelection === "rock" && computerSelection === "paper") { 
         displayResult.textContent = "You lose!";
         cScore++;
         scoreResults();
+        winGame();
+        loseGame();
         return;
       }
   //Check for Paper
@@ -73,11 +77,15 @@ function checkWinner (playerSelection, computerSelection) {
         displayResult.textContent = "You lose!";
         cScore++;
         scoreResults();
+        winGame();
+        loseGame();
         return;
       } else if(playerSelection === "paper" && computerSelection === "rock"){
         displayResult.textContent = "Youu Win!!";
         pScore++;
         scoreResults();
+        winGame();
+        loseGame();
         return;
       }
     //Check for Scissors
@@ -85,11 +93,15 @@ function checkWinner (playerSelection, computerSelection) {
         displayResult.textContent = "You lose!";
         cScore++;
         scoreResults();
+        winGame();
+        loseGame();
         return;
       } else if(playerSelection === "scissors" && computerSelection === "paper") {
         displayResult.textContent = "Youu Win!!";
         pScore++;
         scoreResults();
+        winGame();
+        loseGame();
         return;
       }
     }
@@ -98,7 +110,8 @@ function checkWinner (playerSelection, computerSelection) {
      * Fade out match screen and fade in restart screen
      */
 function winGame(){
-  pScore++;
+ // pScore++;
+  //cScore++;
   let playerScore = document.getElementById("player-score");
   let computerScore = document.getElementById("computer-score");
   let match = document.querySelector(".game");
@@ -106,10 +119,10 @@ function winGame(){
   playerScore.innerText = pScore;
   computerScore.innerText = cScore; 
   if(pScore === 3){
+   // gameOver();
     match.classList.add("fadeOut");
         restartScreen.classList.add("fadeIn");
-    gameOver();
-  }
+    }
 }
 
     /**lose game function
@@ -117,7 +130,7 @@ function winGame(){
      * Fade out match screen and fade in restart screen
      */
 function loseGame(){
-  cScore++;
+  
   let playerScore = document.getElementById("player-score");
   let computerScore = document.getElementById("computer-score");
   let match = document.querySelector(".game");
@@ -125,11 +138,12 @@ function loseGame(){
   playerScore.innerText = pScore;
   computerScore.innerText = cScore; 
   if (cScore === 3){
+   // gameOver();
     match.classList.add("fadeOut");
     restartScreen.classList.add("fadeIn");
-    gameOver();
+    
   }
-}
+} 
 /**Game over function
  * Prevent actions when selections are clicked
  */
@@ -138,11 +152,11 @@ function gameOver(){
   let options = document.querySelectorAll(".selections button");
 
  for (let i = 0; i < options.length; i++){
-          options[i].addEventListener("click", function(){})
+          options[i].removeEventListener("click", function(){})
         }
 }
 /**
- * Fades in restart screen
+ * Fades in restart
  */
 function restartGame(){
   let playAgain = document.querySelector(".restart-game button");

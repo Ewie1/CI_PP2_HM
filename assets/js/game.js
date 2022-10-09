@@ -7,8 +7,8 @@ function main(){
     runGame();
     winGame();
     loseGame();
-    gameOver();
     restartGame();
+    resetGame();
       // funtion to fade intro page
 function gameIntro (){
       let playBtn = document.querySelector(".intro button");
@@ -26,6 +26,7 @@ function  runGame(){
     let playerImage = document.querySelector(".player-image");
     let computerImage = document.querySelector(".computer-image");
     let computerOptions =["rock", "paper", "scissors"];
+   
 
    for (let i = 0; i < options.length; i++){
             options[i].addEventListener("click", function(){
@@ -104,6 +105,9 @@ function checkWinner (playerSelection, computerSelection) {
         loseGame();
         return;
       }
+      const restartBtn = document.getElementById("restart");
+  restartBtn.addEventListener('click', function () {
+    window.location.reload();})
     }
     /**Win game function
      * Stop click selection at max pscore value
@@ -119,11 +123,15 @@ function winGame(){
   playerScore.innerText = pScore;
   computerScore.innerText = cScore; 
   if(pScore === 3){
-   // gameOver();
+    gameOver();
     match.classList.add("fadeOut");
         restartScreen.classList.add("fadeIn");
-    }
+      //  reset.addEventListener("click", resetGame);
 }
+    }
+
+    let reset = document.getElementsByClassName("restart-game");
+
 
     /**lose game function
      * Stop click selection at max cscore value
@@ -138,7 +146,7 @@ function loseGame(){
   playerScore.innerText = pScore;
   computerScore.innerText = cScore; 
   if (cScore === 3){
-   // gameOver();
+    gameOver();
     match.classList.add("fadeOut");
     restartScreen.classList.add("fadeIn");
     
@@ -149,25 +157,36 @@ function loseGame(){
  */
  
 function gameOver(){
-  let options = document.querySelectorAll(".selections button");
+  
+  let rock = document.getElementById("rock");
+  let paper = document.getElementById("paper");
+  let scissors = document.getElementById("scissors");
 
- for (let i = 0; i < options.length; i++){
-          options[i].removeEventListener("click", function(){})
-        }
+  rock.setAttribute("disabled", "disabled");
+  paper.setAttribute("disabled", "disabled");
+  scissors.setAttribute("disabled", "disabled");
 }
 /**
  * Fades in restart
  */
 function restartGame(){
-  let playAgain = document.querySelector(".restart-game button");
-      let restartScreen = document.querySelector(".restart-game");
-      let match = document.querySelector(".game");
-  
-      playAgain.addEventListener("click", function(){
-        restartScreen.classList.add("fadeOut");
-        match.classList.add("fadeIn");
-      }); 
+ // let reset = document.getElementsByClassName("restart-game");
+ // reset.addEventListener("click", resetGame);
+ 
 }
-  }
+
+function resetGame(){
+  runGame();
+  scoreResults();
+  checkWinner();
+}
+
+const restartBtn = document.getElementById("restart");
+  restartBtn.addEventListener('click', () => {
+    window.location.reload();})
+ console.log(restartBtn);
+
+}
 // call main function
 main();
+let options =["rock", "paper", "scissors"];

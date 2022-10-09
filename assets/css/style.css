@@ -144,6 +144,19 @@ header {
     font-size: 1rem;
     color: white;
 }
+
+.restart-game button{
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: 1px solid orangered;
+    color: rgb(224, 224, 224);
+    font-size: 20px;
+    background: rgb(45, 70, 117);
+    border-radius: 3px;
+    margin-top: -50px;
+    cursor: pointer;
+}
  
 /*Add fadein and fadeout perameters*/
 div.fadeOut {

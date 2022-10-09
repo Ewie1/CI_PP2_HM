@@ -13,9 +13,20 @@ let scoreBoard = document.getElementsByClassName("score-count");
 let button = document.getElementsByTagName("button");
 let img = document.getElementById("player-image")
 let imageArray =["rock.png", "paper.png", "scissors.png"];
+let playBtn = document.querySelector(".intro button");
+  let introScreen = document.querySelector(".intro");
+  let match = document.querySelector(".game");
 
+function gameIntro (){
+  let playBtn = document.querySelector(".intro button");
+  let introScreen = document.querySelector(".intro");
+  let match = document.querySelector(".game");
 
-
+  playBtn.addEventListener("click", function(){
+    introScreen.classList.add("fadeOut");
+    match.classList.add("fadeIn");
+  });
+};
 
 /**
  * Call rock, paper, scissor selections and add click eventlistener 

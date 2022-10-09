@@ -247,47 +247,47 @@ along a play game button which leads to the game page with a the header and foot
 
 ### Testing user stories
 
-1. Start game by button click
-
+1. As a fisrt time user i want quick game start
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
-   | Color contrast | Bright color contrast and images with laughter |Website feels like the gym  | Works as expected |
+   | Play button | Clicked | Fades page to game area | Works as expected |
 
    <details><summary>Screenshots</summary>
    <img src="docs/features/brightenergy.PNG">
    </details>
 
-2. Have a colorful game area 
+2.  As a first time user i want see attractive characters
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
-    | Map | Scroll down on first page and click the google mag  | Goolge show gym location in the city | Works as expected |
+    | Game area | leave intro page  | all game character visible | Works as expected |
 
      <details><summary>Screenshots</summary>
      <img src="docs/features/test-user-story/inkedlocatmap.jpg">
      </details>
 
-3. Have attractive selection options
+3. As a first time user i want to have active selection options
+  
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
-   | Gym interior image | Scroll down on home page | Find pictures of the gym interior | Works as expected |
+   | Selsction icons | click selector icons| rock,paper or scissor image changes | Works as expected |
     <details><summary>Screenshots</summary>
     <img src="docs/features/test-user-story/intteaser.jpg">
     </details>
 
-4.  Have attractive and fun response
+4. As a first user have to see a win or lose message
 
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
-   | Trian with us and Gym comforts list | Scroll down on home page  | Readable intriguing list | Works as expected |
+   | Result Message | click selector icons  |appears when selected options are compared  | Works as expected |
     <details><summary>Screenshots</summary>
     <img src="docs/features/test-user-story/inkedfeatureslist.jpg">
     </details>
 
-5. See a Score count
+5. As a first time user i want to know my scores
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
-   | Signup From | Cick signup button,Nav bar | Directed to signup page | Works as expected |
+   | Score count dispaly | click selector icons | score count changes | Works as expected |
 
     <details><summary>Screenshots</summary>
     <img src="docs/features/signupform.PNG">

@@ -27,14 +27,11 @@ function main() {
     const computerImage = document.querySelector(".computer-image");
     const computerOptions = ["rock", "paper", "scissors"];
 
-
     for (let i = 0; i < options.length; i++) {
       options[i].addEventListener("click", function () {
         let computerNumber = Math.floor(Math.random() * 3);
         let computerSelection = computerOptions[computerNumber];
-        //Call checkWinner here
         checkWinner(this.id, computerSelection);
-        // display selected images
         playerImage.src = `assets/images/${this.id}.png`;
         console.log(this.id)
         computerImage.src = `assets/images/${computerSelection}.png`;
@@ -50,7 +47,6 @@ function main() {
   }
   //Function to determine winner or loser
   function checkWinner(playerSelection, computerSelection) {
-    //Update Text
     let displayResult = document.querySelector(".results");
     //Checking for a tie
     if (playerSelection === computerSelection) {
@@ -132,7 +128,6 @@ function main() {
       })
       console.log("hello");
       console.log(restartBtn);
-      //  reset.addEventListener("click", resetGame);
     }
   }
 
@@ -156,47 +151,23 @@ function main() {
       restartBtn.addEventListener('click', () => {
         window.location.reload();
       })
-      console.log("hello");
-      console.log(restartBtn);
     }
   }
   /**Game over function
    * Prevent actions when selections are clicked
-   */
-
+   */ 
   function gameOver() {
 
     let rock = document.getElementById("rock");
     let paper = document.getElementById("paper");
     let scissors = document.getElementById("scissors");
-
     rock.setAttribute("disabled", "disabled");
     paper.setAttribute("disabled", "disabled");
     scissors.setAttribute("disabled", "disabled");
   }
-  /**
-   * Fades in restart
-   */
-  function restartGame() {
-    // let reset = document.getElementsByClassName("restart-game");
-    // reset.addEventListener("click", resetGame);
 
-  }
-
-  function resetGame() {
-    runGame();
-    scoreResults();
-    checkWinner();
-  }
-
-  const restartBtn = document.getElementById("restart");
-  restartBtn.addEventListener('click', () => {
-    window.location.reload();
-  })
-  console.log("hello");
-  console.log(restartBtn);
-
+  
 }
-// call main function
+/**call main function */ 
 main();
-//let options =["rock", "paper", "scissor"];
+

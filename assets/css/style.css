@@ -217,6 +217,10 @@ footer{
         padding: 5px;
     }
 
+    .intro h2{
+        font-size: 100px;
+    }
+
     .game {
        margin-top: 50px;
     }

@@ -87,7 +87,7 @@
 
 10. I want the user enjoy the creative output of the game
 12. As a site owner i want user ti enjoy playning the game
-13. 
+13. Have an 404 error page
 ## Design
 
 ### Design Choices

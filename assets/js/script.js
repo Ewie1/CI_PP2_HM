@@ -61,48 +61,44 @@ function checkWinner (playerChoice, computerChoice) {
       return;
     }
     //Check for Rock
-    if (playerChoice === "rock") {
-      if (computerChoice === "scissors") {
+    if (playerChoice === "rock" && computerChoice === "scissors") {
         displayResult.textContent = "Youu Wins!!";
         pScore++;
         scoreResults();
         return;
-      } else {
+      } else if (playerChoice === "rock" && computerChoice === "paper") { 
         displayResult.textContent = "You lose!";
         cScore++;
         scoreResults();
         return;
       }
-    }
+
     //Check for Paper
-    if (playerChoice === "paper") {
-      if (computerChoice === "scissors") {
+    if (playerChoice === "paper" && computerChoice === "scissors") {
         displayResult.textContent = "You lose!";
         cScore++;
         scoreResults();
         return;
-      } else {
+      } else if(playerChoice === "paper" && computerChoice === "rock"){
         displayResult.textContent = "Youu Win!!";
         pScore++;
         scoreResults();
         return;
       }
-    }
+    
     //Check for Scissors
-    if (playerChoice === "scissors") {
-      if (computerChoice === "rock") {
+    if (playerChoice === "scissors" && computerChoice === "rock") {
         displayResult.textContent = "You lose!";
         cScore++;
         scoreResults();
         return;
-      } else {
+      } else if(playerChoice === "scissors" && computerChoice === "paper") {
         displayResult.textContent = "Youu Win!!";
         pScore++;
         scoreResults();
         return;
       }
     }
-}
-}
+  }
 // start game function
 main();

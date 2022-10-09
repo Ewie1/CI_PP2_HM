@@ -164,27 +164,35 @@ along a play game button which leads to the game page with a the header and foot
 ![game-message](docs/features/result-message .png)
 
 ### Score Count
-- Easy nav is a simple buttton to have the user avoid scrolling up to get to the About Us page.
-- This faeture serves the purpose of allow the user to go throught the page smoothly finding all the gym information with out the need of scrolling back up to the menu bar but use the more about us button to get to the second page whicg contains more information about the gym.
+- The score count features located on the top left and top right of the game area shows the count of when the player win and when the computer win to give the player and idea of if they are winner or not. If there is a draw the numbers will remain the same. 
 
-![easy-nav](docs/features/easynav.PNG)
+![score-count](docs/features/result-message .png)
 
-### Selected Images
-- Open times are locate as we go down to give the user essentail information so they can  fit their schedule into the open times of the gym.
+### Selected Images display
+- The selected image display shows animated images of a rock, a paper and  scissors to the player or computer selections. These images give the game character.
 
-![opem-times](docs/features/opentimes.PNG)
+![selected-images-display](docs/features/selected-characters.png)
 
 ### Selection btns
-- A simple image og the gym i like to call a teaser image of the interior of the gym so the user gets an idea of what to expect and what kind of enviroment the gym offers.
-- User story covered: 3
+- The selection buttons are iconic rock, paper, scissors which also gives the game character and are used to for the player to pick a choice.
 
-![interior-teaser](docs/features/teaser.PNG)
+![selection-buttons](docs/features/selector-icons.png)
 
-### Restart Game
-- The map which give the location for the gym with an easy click.
-- User story covered: 2
+### Game over
+- The game over button appears when the game chooses the game winner which is determined at the 12 winning score on either side.
 
-![map](docs/features/map4.PNG)
+![game-over](docs/features/gameover-button.png)
+
+### Footer
+- The game footer is consist of the link to the Github link for the game and the linkedin for the designer.
+
+![footer](docs/features/footer-links.png)
+
+### 404
+
+- The 404 is the error page which returns the user to the game if an error occure or the wrong search link is used.
+
+![404-page](docs/features/404page.png)
 
 
 ## Validation

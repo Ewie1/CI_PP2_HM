@@ -22,10 +22,10 @@ function gameIntro (){
     };
     //function to run game
 function  runGame(){
-    let options = document.querySelectorAll(".selections button");
-    let playerImage = document.querySelector(".player-image");
-    let computerImage = document.querySelector(".computer-image");
-    let computerOptions =["rock", "paper", "scissors"];
+    const options = document.querySelectorAll(".selections button");
+    const playerImage = document.querySelector(".player-image");
+    const computerImage = document.querySelector(".computer-image");
+    const computerOptions =["rock", "paper", "scissors"];
    
 
    for (let i = 0; i < options.length; i++){
@@ -122,7 +122,7 @@ function winGame(){
   let restartScreen = document.querySelector(".restart-game")
   playerScore.innerText = pScore;
   computerScore.innerText = cScore; 
-  if(pScore === 3){
+  if(pScore === 12){
     gameOver();
     match.classList.add("fadeOut");
         restartScreen.classList.add("fadeIn");
@@ -130,10 +130,7 @@ function winGame(){
 }
     }
 
-    let reset = document.getElementsByClassName("restart-game");
-
-
-    /**lose game function
+     /**lose game function
      * Stop click selection at max cscore value
      * Fade out match screen and fade in restart screen
      */
@@ -145,7 +142,7 @@ function loseGame(){
   let restartScreen = document.querySelector(".restart-game")
   playerScore.innerText = pScore;
   computerScore.innerText = cScore; 
-  if (cScore === 3){
+  if (cScore === 12){
     gameOver();
     match.classList.add("fadeOut");
     restartScreen.classList.add("fadeIn");
@@ -184,9 +181,10 @@ function resetGame(){
 const restartBtn = document.getElementById("restart");
   restartBtn.addEventListener('click', () => {
     window.location.reload();})
+    console.log("hello");
  console.log(restartBtn);
 
 }
 // call main function
 main();
-let options =["rock", "paper", "scissors"];
+//let options =["rock", "paper", "scissor"];

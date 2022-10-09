@@ -91,16 +91,17 @@
 ## Design
 
 ### Design Choices
-
+The rock paper scissors game was with special images to give the game charactor and a competitive feel
 ### Colour
-
+The colors brown, black, white, etc were chosen to give an animated feel.
 ### Fonts
-
+The font indie flower was chosen to give a relaxed feel to the game
 ### Structure
 
-- Into 
+- Intro 
 - Game page
 - Game over and Restart page
+- 404 page
 
 ### Wireframes
 
@@ -403,19 +404,6 @@ You can clone the repository by following these steps:
 ## Credits
 
 ### Media
-
-Media images were referenced from <a href="https://www.pexels.com/">Pexels</a> , <a href="https://unsplash.com/">Upsplash</a> and <a href="http://www.freepik.com/">Freepik</a>. 
-
-- [404-background](assets/images/404er.jpeg): <a href=" https://www.pexels.com/photo/an-apple-and-a-dumbbell-on-a-clipboard-8154260/" >Pexels</a>
-  Photo by:  <a href="https://www.pexels.com/@alesiakozik/">Alesia Kozik</a>
-- [signup-page-background](assets/images/signupimage.jpeg): <a href="https://www.pexels.com/photo/          personal-male-trainer-with-overweight-female-client-in-fitness-center-6455927/">Pexels</a>
-  Photo by:  <a href="https://www.pexels.com/@julia-larson/">Julian Larson</a>
-- [hero-image](assets/images/heroimage.jpg): <a href="https://www.freepik.com/premium-photo/sport-couple-doing-plank-exercise-workout-fitness-centrum-man-woman-practicing-plank-gym_17801349.htm">Freepik</a>
-  Photo by: <a href= "https://www.freepik.com/author/weyo">Weyo</a>
-- [crossfit-image](assets/images/crossfitsmall.jpg): <a href="https://unsplash.com/photos/h3D-RRvxfqE">Unsplash</a>
-  Photo by: <a href="https://unsplash.com/@bastien_plu">Bastien Plu</a>
-- [trainer-image](assets/images/trainer.jpeg): <a href="https://www.pexels.com/photo/ethnic-woman-exercising-with-battling-ropes-near-male-trainer-6455771/">Pexels</a>
-  photo by: <a href= "https://www.pexels.com/@julia-larson/">Julian Larson</a>
 
 
 ### Code

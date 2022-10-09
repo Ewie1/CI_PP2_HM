@@ -6,7 +6,6 @@ function main() {
   runGame();
   winGame();
   loseGame();
-  restartGame();
   resetGame();
 
   // funtion to fade intro page
@@ -159,14 +158,12 @@ function main() {
   function gameOver() {
 
     let rock = document.getElementById("rock");
-    let paper = document.getElementById("paper");
+    let paper = document.getElementById("paper");i
     let scissors = document.getElementById("scissors");
     rock.setAttribute("disabled", "disabled");
     paper.setAttribute("disabled", "disabled");
     scissors.setAttribute("disabled", "disabled");
   }
-
-  
 }
 /**call main function */ 
 main();

@@ -96,9 +96,13 @@ function winGame(){
   pScore++;
   let playerScore = document.getElementById("player-score");
   let computerScore = document.getElementById("computer-score");
+  let match = document.querySelector(".game");
+  let restartScreen = document.querySelector(".restart-game")
   playerScore.innerText = pScore;
   computerScore.innerText = cScore; 
   if(pScore === 3){
+    match.classList.add("fadeOut");
+        restartScreen.classList.add("fadeIn");
     gameOver();
   }
 }
@@ -106,9 +110,13 @@ function loseGame(){
   cScore++;
   let playerScore = document.getElementById("player-score");
   let computerScore = document.getElementById("computer-score");
+  let match = document.querySelector(".game");
+  let restartScreen = document.querySelector(".restart-game")
   playerScore.innerText = pScore;
   computerScore.innerText = cScore; 
   if (cScore === 3){
+    match.classList.add("fadeOut");
+    restartScreen.classList.add("fadeIn");
     gameOver();
   }
 }

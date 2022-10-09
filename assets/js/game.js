@@ -19,11 +19,11 @@ function main(){
 function gameIntro (){
       let playBtn = document.querySelector(".intro button");
       let introScreen = document.querySelector(".intro");
-      let match = document.querySelector(".game");
+      let game = document.querySelector(".game");
   
       playBtn.addEventListener("click", function(){
         introScreen.classList.add("fadeOut");
-        match.classList.add("fadeIn");
+        game.classList.add("fadeIn");
       });
     };
     //function to run game
@@ -120,20 +120,19 @@ function checkWinner (playerSelection, computerSelection) {
      * Fade out match screen and fade in restart screen
      */
 function winGame(){
- // pScore++;
-  //cScore++;
+  const restartGame = document.getElementById("restart");
   let playerScore = document.getElementById("player-score");
   let computerScore = document.getElementById("computer-score");
-  let match = document.querySelector(".game");
+  let game = document.querySelector(".game");
   let restartScreen = document.querySelector(".restart-game")
   playerScore.innerText = pScore;
   computerScore.innerText = cScore; 
   if(pScore === 12){
     gameOver();
-    match.classList.add("fadeOut");
+    game.classList.add("fadeOut");
         restartScreen.classList.add("fadeIn");
-        const restartBtn = document.getElementById("restart");
-  restartBtn.addEventListener('click', () => {
+       
+  restartGame.addEventListener('click', () => {
     window.location.reload();})
     console.log("hello");
  console.log(restartBtn);
@@ -193,7 +192,7 @@ function resetGame(){
   checkWinner();
 }
 
-const restartBtn = document.querySelector(".restart-game button");
+const restartBtn = document.getElementById("restart");
   restartBtn.addEventListener('click', () => {
     window.location.reload();})
     console.log("hello");

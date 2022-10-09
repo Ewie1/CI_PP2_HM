@@ -74,20 +74,17 @@
 
 ####  User 
 
- 1. Start game by button click
- 2. Have a colorful game area 
- 3. Have attractive selection options
- 4. Have attractive and fun response
- 5. See a Score count
- 6. 
- 7. Have a game over function
-
+ 1. As a fisrt time user i want quick game start
+ 2. As a first time user i want see attractive characters
+ 3. As a first time user i want to have active selection options
+ 4. As a first user have to see a win or lose message
+ 5. As a first time user i want to know my scores
 
 #### Site Owner 
 
-10. I want the user enjoy the creative output of the game
-12. As a site owner i want user ti enjoy playning the game
-13. Have an 404 error page
+6. As a  site owner i want the gameto have an end  function 
+7. As a site Owner I want the user enjoy the creative output of the game
+8.  As a owner I want user to have a customized 404 error page if the wedsite fail to load
 ## Design
 
 ### Design Choices
@@ -114,9 +111,6 @@ The font indie flower was chosen to give a relaxed feel to the game
 <img src="/docs/wireframes/game-page.png">
 <img src="/docs/wireframes/game page ipad.png">
 <img src="/docs/wireframes/game page iphone.png">
-</details>
-<details><summary>Game over and Restart page</summary>
-<img src="">
 </details>
 <details><summary>404 page</summary>
 <img src="">
@@ -247,7 +241,7 @@ along a play game button which leads to the game page with a the header and foot
 
 ### Testing user stories
 
-1. As a fisrt time user i want quick game start
+1. As a first time user i want quick game start
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
    | Play button | Clicked | Fades page to game area | Works as expected |
@@ -293,77 +287,37 @@ along a play game button which leads to the game page with a the header and foot
     <img src="docs/features/signupform.PNG">
     </details>
 
-6. Have a game over function  
+6. As a  site owner i want the gameto have an end  function  
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
-   | Footer  on all pages | On any page scroll to the footer | See phone number and email address | Works as expected |
+   | Game over message | game score raises to 12 | selectors are disable with a game over message | Works as expected |
 
      <details><summary>Screenshots</summary>
      <img src="docs/features/test-user-story/inkedcontactinfo1.jpg">
      </details>
 
-7. I want the user enjoy the creative output of the game
+7. As a site Owner I want the user enjoy the creative output of the game
 
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |   
    |-------------|------------|---------------------|-------------------|
-   | About Us pragraph | Navigate to the us page in menu bar  | Read  | Works as expected |
+   | Game area | click play game button  | game is ready for user input | Works as expected |
 
      <details><summary>Screenshots</summary>
      <img src="docs/features/test-user-story/inkedmenu-aboutusnav.jpg">
      <img src="docs/features/aboutus.PNG">
      </details>
 
-8. As a site owner i want user ti enjoy playning the game
-
-   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
-   |-------------|------------|---------------------|-------------------|
-   | Membership Cards | Navigate to the About Uspage Scrooll down | Read | Works as expectd |
-
-     <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/inkedmenu-aboutusnav.jpg">
-     <img src="docs/features/test-user-story/inkedcards.jpg">
-     </details>
-
-9.  Have an 404 error page
-   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
-   |-------------|------------|---------------------|-------------------|
-   | Footer - social media section | On any page scroll to the bottom | Click on social media links | Works as expected | 
-
-     <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/inkedsociallinks.jpg">
-     </details>
-
-
-10. 
-    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
-    |-------------|------------|---------------------|-------------------|
-    | Signup Form | U Navigate sign up page click dropdown option| Choose from drop down option | Works as expected |
-
-    <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/inkedsignupnav.jpg">
-    <img src="/docs/features/test-user-story/inkedcardoptions.PNG">
-    </details>
-
-11. As a owner I want user to have a cutomized 404 error page if the wedsite fail to load
+8. As a owner I want user to have a cutomized 404 error page if the wedsite fail to load
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
-    | 404 error page | On non-matched URL| Choose from drop down option | Works as expected |
+    | 404 error page | On non-matched URL| 404 page present with a return button to the game intro page | Works as expected |
 
     <details><summary>Screenshots</summary>
     <img src="docs/features/test-user-story/404page.PNG">
     </details>
 
-12. As a site owner I want users to leave comments upon sign up
 
-    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
-    |-------------|------------|---------------------|-------------------|
-    | Signup form | Navigate to signup page | Leave comments | Works as expected |
-
-     <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/inkedsignupnav.jpg">
-     <img src="docs/features/comments.PNG">
-     </details>
     
 ## Bugs
   List of bugs found and fixes used ti mitigate them.

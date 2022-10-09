@@ -42,26 +42,15 @@
 
 ### User Goals
 
-- Start game by button click
-- Have a colorful game area 
-- Have attractive selection options
-- Have attractive and fun response
-- See a Score count
-- See a final score
-- Have a game over and restart game option
-
+- Play a simple interactive game rock paper scissors
+- 
 
 ### Site Owner Goals
 
--
-- 
-- 
-- 
+- Build an easy to use interactive game 
+- Build a game with an attractive design
+- Build and game that is simple to navigate
 -  
-- 
-- 
-- 
--
 
 ## User Experience
 

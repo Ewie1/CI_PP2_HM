@@ -42,13 +42,14 @@
 
 ### User Goals
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- Start game by button click
+- Have a colorful game area 
+- Have attractive selection options
+- Have attractive and fun response
+- See a Score count
+- See a final score
+- Have a game over and restart game option
+
 
 ### Site Owner Goals
 
@@ -87,9 +88,16 @@
 ### User Stories
 
 #### First-time User 
-1. 
-2. 
-3. 
+
+ 1. Start game by button click
+ 2. Have a colorful game area 
+ 3. Have attractive selection options
+ 4. Have attractive and fun response
+ 5. See a Score count
+ 6. See a final score
+ 7. Have a game over and restart game option
+
+
 4. 
 
 #### Returning User

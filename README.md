@@ -376,6 +376,6 @@ You can clone the repository by following these steps:
 
 
 ## Acknowledgements
-- Tanks and acknowlegement goes to my mentor Mo Shami great guidance.
+- Thank you to my mentor Mo Shami great guidance.
 - Acknowledge my brother Addan Mc Collin for support form a user's veiw
 - Thankful to the Slack team for tips

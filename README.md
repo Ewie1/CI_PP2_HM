@@ -79,8 +79,8 @@
  3. Have attractive selection options
  4. Have attractive and fun response
  5. See a Score count
- 6. See a final score
- 7. Have a game over and restart game option
+ 6. 
+ 7. Have a game over function
 
 
 #### Site Owner 
@@ -146,7 +146,7 @@ The page consists of 3 pages and 9 sections
 ### Header Display
 - The header give the name of the game with a special selected font style
 
-![logo-and-nav](docs/features/menulogonavs.PNG)
+![game-header](docs/features/header.png)
 
 ### Intro btn and Image
 - Here the hero image that describe everything a user need in a gym laughter, diversity and work. Along with giving a feel for what you get at the gym there is also a cover note with two questios to catch the users interest and want to know more about the gym.

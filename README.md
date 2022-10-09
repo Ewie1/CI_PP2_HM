@@ -247,7 +247,7 @@ along a play game button which leads to the game page with a the header and foot
 
 ### Testing user stories
 
-1. As  a first time user I expect a bright feel energetic gym feel
+1. Start game by button click
 
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
@@ -257,7 +257,7 @@ along a play game button which leads to the game page with a the header and foot
    <img src="docs/features/brightenergy.PNG">
    </details>
 
-2.  As a firstime user I want to know the location of the gym
+2. Have a colorful game area 
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
@@ -267,7 +267,7 @@ along a play game button which leads to the game page with a the header and foot
      <img src="docs/features/test-user-story/inkedlocatmap.jpg">
      </details>
 
-3. As a first time user I want to see the gym interior
+3. Have attractive selection options
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
    | Gym interior image | Scroll down on home page | Find pictures of the gym interior | Works as expected |
@@ -275,7 +275,7 @@ along a play game button which leads to the game page with a the header and foot
     <img src="docs/features/test-user-story/intteaser.jpg">
     </details>
 
-4. As a first time user I want to know what training programs are available 
+4.  Have attractive and fun response
 
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
@@ -284,7 +284,7 @@ along a play game button which leads to the game page with a the header and foot
     <img src="docs/features/test-user-story/inkedfeatureslist.jpg">
     </details>
 
-5. As a returning user I want to know where to sign up
+5. See a Score count
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
    | Signup From | Cick signup button,Nav bar | Directed to signup page | Works as expected |
@@ -293,7 +293,7 @@ along a play game button which leads to the game page with a the header and foot
     <img src="docs/features/signupform.PNG">
     </details>
 
-6. As a returning user i want contact information   
+6. Have a game over function  
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
    | Footer  on all pages | On any page scroll to the footer | See phone number and email address | Works as expected |
@@ -302,7 +302,7 @@ along a play game button which leads to the game page with a the header and foot
      <img src="docs/features/test-user-story/inkedcontactinfo1.jpg">
      </details>
 
-7. As a returning user I was to know the reason and the mission of the gym
+7. I want the user enjoy the creative output of the game
 
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |   
    |-------------|------------|---------------------|-------------------|
@@ -313,7 +313,7 @@ along a play game button which leads to the game page with a the header and foot
      <img src="docs/features/aboutus.PNG">
      </details>
 
-8. As a returning user I want to know about the membership and options available
+8. As a site owner i want user ti enjoy playning the game
 
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
@@ -324,8 +324,7 @@ along a play game button which leads to the game page with a the header and foot
      <img src="docs/features/test-user-story/inkedcards.jpg">
      </details>
 
-9. As a returning user, I want to see the gym's social media followings 
-
+9.  Have an 404 error page
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
    | Footer - social media section | On any page scroll to the bottom | Click on social media links | Works as expected | 
@@ -335,8 +334,7 @@ along a play game button which leads to the game page with a the header and foot
      </details>
 
 
-10. As a siteowner I want the users to not only sign up but have membership option
-
+10. 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
     | Signup Form | U Navigate sign up page click dropdown option| Choose from drop down option | Works as expected |

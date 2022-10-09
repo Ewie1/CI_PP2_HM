@@ -10,12 +10,12 @@ function main(){
    gameIntro();
     runGame();
       // funtion to fade intro page
-function gameIntro ()  {
+function gameIntro (){
       let playBtn = document.querySelector(".intro button");
       let introScreen = document.querySelector(".intro");
       let match = document.querySelector(".game");
   
-      playBtn.addEventListener("click", () => {
+      playBtn.addEventListener("click", function(){
         introScreen.classList.add("fadeOut");
         match.classList.add("fadeIn");
       });
@@ -25,24 +25,21 @@ function  runGame(){
     let options = document.querySelectorAll(".selections button");
     let playerImage = document.querySelector(".player-image");
     let computerImage = document.querySelector(".computer-image");
-
-    // Computer option
     let computerOptions =["rock", "paper", "scissors"];
 
    for (let i = 0; i < options.length; i++){
             options[i].addEventListener("click", function(){
                 let computerNumber = Math.floor(Math.random() * 3);
-                let computerChoice = computerOptions[computerNumber];
+                let computerSelection = computerOptions[computerNumber];
                 //Call checkWinner here
-              checkWinner(this.id, computerChoice);
+              checkWinner(this.id, computerSelection);
                 // display selected images
             playerImage.src = `assets/images/${this.id}.png`;
             console.log(this.id)
-          computerImage.src = `assets/images/${computerChoice}.png`;
+          computerImage.src = `assets/images/${computerSelection}.png`;
             })
        }
 }
-
 // Function to determine scores
 function scoreResults (){
   let playerScore = document.getElementById("player-score");
@@ -50,49 +47,46 @@ function scoreResults (){
   playerScore.innerText = pScore;
   computerScore.innerText = cScore; 
 } 
-
 //Function to determine winner or loser
-function checkWinner (playerChoice, computerChoice) {
+function checkWinner (playerSelection, computerSelection) {
     //Update Text
     let displayResult = document.querySelector(".results");
     //Checking for a tie
-    if (playerChoice === computerChoice) {
+    if (playerSelection === computerSelection) {
       displayResult.textContent = "It is a tie";
       return;
     }
     //Check for Rock
-    if (playerChoice === "rock" && computerChoice === "scissors") {
+    if (playerSelection === "rock" && computerSelection === "scissors") {
         displayResult.textContent = "Youu Wins!!";
         pScore++;
         scoreResults();
         return;
-      } else if (playerChoice === "rock" && computerChoice === "paper") { 
+      } else if (playerSelection === "rock" && computerSelection === "paper") { 
         displayResult.textContent = "You lose!";
         cScore++;
         scoreResults();
         return;
       }
-
-    //Check for Paper
-    if (playerChoice === "paper" && computerChoice === "scissors") {
+  //Check for Paper
+    if (playerSelection === "paper" && computerSelection === "scissors") {
         displayResult.textContent = "You lose!";
         cScore++;
         scoreResults();
         return;
-      } else if(playerChoice === "paper" && computerChoice === "rock"){
+      } else if(playerSelection === "paper" && computerSelection === "rock"){
         displayResult.textContent = "Youu Win!!";
         pScore++;
         scoreResults();
         return;
       }
-    
     //Check for Scissors
-    if (playerChoice === "scissors" && computerChoice === "rock") {
+    if (playerSelection === "scissors" && computerSelection === "rock") {
         displayResult.textContent = "You lose!";
         cScore++;
         scoreResults();
         return;
-      } else if(playerChoice === "scissors" && computerChoice === "paper") {
+      } else if(playerSelection === "scissors" && computerSelection === "paper") {
         displayResult.textContent = "Youu Win!!";
         pScore++;
         scoreResults();
@@ -100,5 +94,5 @@ function checkWinner (playerChoice, computerChoice) {
       }
     }
   }
-// start game function
+// call main function
 main();

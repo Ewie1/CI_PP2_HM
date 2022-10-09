@@ -5,6 +5,8 @@ function main(){
     //call inner functions
    gameIntro();
     runGame();
+    winGame();
+    loseGame();
     gameOver();
       // funtion to fade intro page
 function gameIntro (){
@@ -90,6 +92,27 @@ function checkWinner (playerSelection, computerSelection) {
         return;
       }
     }
+function winGame(){
+  pScore++;
+  let playerScore = document.getElementById("player-score");
+  let computerScore = document.getElementById("computer-score");
+  playerScore.innerText = pScore;
+  computerScore.innerText = cScore; 
+  if(pScore === 3){
+    gameOver();
+  }
+}
+function loseGame(){
+  cScore++;
+  let playerScore = document.getElementById("player-score");
+  let computerScore = document.getElementById("computer-score");
+  playerScore.innerText = pScore;
+  computerScore.innerText = cScore; 
+  if (cScore === 3){
+    gameOver();
+  }
+}
+
  //game over function
 function gameOver(){
   let options = document.querySelectorAll(".selections button");

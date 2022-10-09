@@ -193,7 +193,7 @@ function resetGame(){
   checkWinner();
 }
 
-const restartBtn = document.getElementById("restart");
+const restartBtn = document.querySelector(".restart-game button");
   restartBtn.addEventListener('click', () => {
     window.location.reload();})
     console.log("hello");

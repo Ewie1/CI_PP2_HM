@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
   //  for (let i = 0; i < options.length; i++)
     options.forEach(option => {
         option.addEventListener("click", function(){
-            playGame();
+           
         })
         })
     

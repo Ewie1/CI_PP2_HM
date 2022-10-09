@@ -303,8 +303,8 @@ along a play game button which leads to the game page with a the header and foot
    | Game area | click play game button  | game is ready for user input | Works as expected |
 
      <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/inkedmenu-aboutusnav.jpg">
-     <img src="docs/features/aboutus.PNG">
+     <img src="docs/features/intro.png">
+     <img src="docs/features/game-area.png">
      </details>
 
 8. As a owner I want user to have a cutomized 404 error page if the wedsite fail to load

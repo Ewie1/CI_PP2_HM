@@ -38,13 +38,19 @@ header {
     font-size: 15px;
 }
 
+/*Style for 404 error page*/
 .intro h2 {
     margin-top: 300px;
     font-size: 150px;
 }
 
+.intro h3 {
+    margin-top: 300px;
+    font-size: 30px;
+}
+
 .intro a{
-    border: none;
+    border-bottom: none;
     color: whitesmoke;
 }
 /*Add style for the intro page image*/

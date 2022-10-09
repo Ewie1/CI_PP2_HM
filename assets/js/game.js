@@ -9,6 +9,12 @@ function main(){
     loseGame();
     restartGame();
     resetGame();
+
+    let rock = document.getElementById("rock");
+  let paper = document.getElementById("paper");
+  let scissors = document.getElementById("scissors");
+
+    
       // funtion to fade intro page
 function gameIntro (){
       let playBtn = document.querySelector(".intro button");
@@ -27,7 +33,7 @@ function  runGame(){
     const computerImage = document.querySelector(".computer-image");
     const computerOptions =["rock", "paper", "scissors"];
    
-
+   
    for (let i = 0; i < options.length; i++){
             options[i].addEventListener("click", function(){
                 let computerNumber = Math.floor(Math.random() * 3);

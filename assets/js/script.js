@@ -1,4 +1,8 @@
 
+
+
+
+
 function main(){
     let pScore = 0;
     let cScore = 0;
@@ -7,7 +11,7 @@ function main(){
 
 
     // test code
-function startGame ()  {
+function gameIntro ()  {
       let playBtn = document.querySelector(".intro button");
       let introScreen = document.querySelector(".intro");
       let match = document.querySelector(".game");
@@ -119,9 +123,9 @@ function checkWinner (playerChoice, computerChoice) {
 
 }
 // Call all innerfunctions
-startGame();
+gameIntro();
 playGame();
-}
 
+}
 // start game function
 main();

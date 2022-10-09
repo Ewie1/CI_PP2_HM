@@ -371,12 +371,11 @@ You can clone the repository by following these steps:
 
 ### Code
  - My HTML code from lessons and formats from the html module and walk through project which then evolved into my owm structure as i gain more knowledge by trail and error.
- - My CSS code was also built on the concept of trail and error, google W3School wedsite tips.
-
+ - My CSS code was also built on the concept of trail and error.
+ - My JavaScript was reference form research, not an easy task as a first time finding a way implement JavaScript code but through alot of research, stackoverflow, youtube, codeInstitute module and lovemath walk project i have manage put my Javascript code together.
 
 
 ## Acknowledgements
 - Tanks and acknowlegement goes to my mentor Mo Shami great guidance.
 - Acknowledge my brother Addan Mc Collin for support form a user's veiw
-- Thanks to my girlfriend Hiba Salem for support and input on a user veiw
 - Thankful to the Slack team for tips

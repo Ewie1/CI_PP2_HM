@@ -143,22 +143,25 @@ The font indie flower was chosen to give a relaxed feel to the game
 ## Features
 The page consists of 3 pages and 9 sections
 
+### Intro page
+- The intro page is consist of a small friendly dispalyed image of RocK,Paper, Scissors together
+along a play game button which leads to the game page with a the header and footer contents included.
+![intro-page](docs/features/intro.png)
+
 ### Header Display
 - The header give the name of the game with a special selected font style
 
 ![game-header](docs/features/header.png)
 
-### Intro btn and Image
-- Here the hero image that describe everything a user need in a gym laughter, diversity and work. Along with giving a feel for what you get at the gym there is also a cover note with two questios to catch the users interest and want to know more about the gym.
-- User story covered: 1
+### Game area
+- The game area is shown after the intro page. This area contains all the reactive icons, images, messages for the player to experience.
 
-![heros](docs/features/heros.PNG) 
+![game-area](docs/features/game-area.png) 
 
-### Game results
-- The gym features list is consist of the many progarms available for training and the comforts the gym offer. With this information the user can consider compare to there regular gyms which will help them in deciding to click that signup button.
-- User story covered: 4
+### Game message
+- The game message is designed with a large using the indie flower font to display to the user wheather their selection have win, lost or draw.
 
-![gym-features](docs/features/feature.PNG)
+![game-message](docs/features/result-message .png)
 
 ### Score Count
 - Easy nav is a simple buttton to have the user avoid scrolling up to get to the About Us page.

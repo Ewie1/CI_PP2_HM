@@ -6,11 +6,10 @@
 function main(){
     let pScore = 0;
     let cScore = 0;
-
-
-
-
-    // test code
+    //call inner functions
+   gameIntro();
+    runGame();
+      // funtion to fade intro page
 function gameIntro ()  {
       let playBtn = document.querySelector(".intro button");
       let introScreen = document.querySelector(".intro");
@@ -21,51 +20,38 @@ function gameIntro ()  {
         match.classList.add("fadeIn");
       });
     };
-
-
-
-function playGame(){
+    //function to run game
+function  runGame(){
     let options = document.querySelectorAll(".selections button");
-    let playerSelection = document.querySelector(".player-image");
-    let computerSelection = document.querySelector(".computer-image");
+    let playerImage = document.querySelector(".player-image");
+    let computerImage = document.querySelector(".computer-image");
 
     // Computer option
     let computerOptions =["rock", "paper", "scissors"];
 
-   // for (let i = 0; i < options.length; i++)
-       options.forEach(option => {
-            option.addEventListener("click", function(){
+   for (let i = 0; i < options.length; i++){
+            options[i].addEventListener("click", function(){
                 let computerNumber = Math.floor(Math.random() * 3);
                 let computerChoice = computerOptions[computerNumber];
-                
-                
-
                 //Call checkWinner here
               checkWinner(this.id, computerChoice);
-                
-
-                //Function to display selected images
-            playerSelection.src = `assets/images/${this.id}.png`;
+                // display selected images
+            playerImage.src = `assets/images/${this.id}.png`;
             console.log(this.id)
-          computerSelection.src = `assets/images/${computerChoice}.png`;
-            });
-       
-       
-    });
-};
+          computerImage.src = `assets/images/${computerChoice}.png`;
+            })
+       }
+}
 
 // Function to determine scores
-
 function scoreResults (){
   let playerScore = document.getElementById("player-score");
   let computerScore = document.getElementById("computer-score");
   playerScore.innerText = pScore;
   computerScore.innerText = cScore; 
-
 } 
 
 //Function to determine winner or loser
-
 function checkWinner (playerChoice, computerChoice) {
     //Update Text
     let displayResult = document.querySelector(".results");
@@ -94,13 +80,11 @@ function checkWinner (playerChoice, computerChoice) {
         displayResult.textContent = "You lose!";
         cScore++;
         scoreResults();
-        
         return;
       } else {
         displayResult.textContent = "Youu Win!!";
         pScore++;
         scoreResults();
-        
         return;
       }
     }
@@ -118,14 +102,7 @@ function checkWinner (playerChoice, computerChoice) {
         return;
       }
     }
-
-
-
 }
-// Call all innerfunctions
-gameIntro();
-playGame();
-
 }
 // start game function
 main();

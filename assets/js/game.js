@@ -93,6 +93,10 @@ function checkWinner (playerSelection, computerSelection) {
         return;
       }
     }
+    /**Win game function
+     * Stop click selection at max pscore value
+     * Fade out match screen and fade in restart screen
+     */
 function winGame(){
   pScore++;
   let playerScore = document.getElementById("player-score");
@@ -107,6 +111,11 @@ function winGame(){
     gameOver();
   }
 }
+
+    /**lose game function
+     * Stop click selection at max cscore value
+     * Fade out match screen and fade in restart screen
+     */
 function loseGame(){
   cScore++;
   let playerScore = document.getElementById("player-score");
@@ -121,8 +130,10 @@ function loseGame(){
     gameOver();
   }
 }
-
- //game over function
+/**Game over function
+ * Prevent actions when selections are clicked
+ */
+ 
 function gameOver(){
   let options = document.querySelectorAll(".selections button");
 
@@ -130,7 +141,9 @@ function gameOver(){
           options[i].addEventListener("click", function(){})
         }
 }
-
+/**
+ * Fades in restart screen
+ */
 function restartGame(){
   let playAgain = document.querySelector(".restart-game button");
       let restartScreen = document.querySelector(".restart-game");

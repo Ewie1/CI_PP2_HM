@@ -1,14 +1,11 @@
 
-
-
-
-
 function main(){
     let pScore = 0;
     let cScore = 0;
     //call inner functions
    gameIntro();
     runGame();
+    gameOver();
       // funtion to fade intro page
 function gameIntro (){
       let playBtn = document.querySelector(".intro button");
@@ -93,6 +90,14 @@ function checkWinner (playerSelection, computerSelection) {
         return;
       }
     }
+ //game over function
+function gameOver(){
+  let options = document.querySelectorAll(".selections button");
+
+ for (let i = 0; i < options.length; i++){
+          options[i].addEventListener("click", function(){})
+        }
+}
   }
 // call main function
 main();

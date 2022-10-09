@@ -110,4 +110,95 @@ function checkWinner (playerChoice, computerChoice) {
 
 
 
+} 
+
+document.addEventListener("DOMContentLoaded", function() {
+  let buttons = document.getElementsByTagName("button");
+  let playBtn = document.querySelector(".intro button");
+      let introScreen = document.querySelector(".intro");
+      let match = document.querySelector(".game");
+      let computerOptions =["rock", "paper", "scissors"];
+
+ 
+  for (let button of buttons) { 
+      button.addEventListener("click", function(){
+        if (this.getAttribute("data-type") === "start"){
+          introScreen.classList.add("fadeOut");
+          match.classList.add("fadeIn");
+        }else{
+          let computerNumber = Math.floor(Math.random() * 3);
+          let computerChoice = computerOptions[computerNumber];
+          
+          
+
+          //Call checkWinner here
+        determineWinner(this.id, computerChoice);
+          
+
+          //Function to display selected images
+      playerSelection.src = `assets/images/${this.id}.png`;
+      console.log(this.id)
+    computerSelection.src = `assets/images/${computerChoice}.png`;
+        }
+      });
+      /*{
+        if (this.getAttribute("data-type") === "start"){
+          alert(hello);
+          startGame(); */
+          }
+        })
+     /* }) 
+    
+    }
+    })  */    
+
+ /* function startGame ()  {
+      let playBtn = document.querySelector(".intro button");
+      let introScreen = document.querySelector(".intro");
+      let match = document.querySelector(".game");
+  
+      playBtn.addEventListener("click", () => {
+        introScreen.classList.add("fadeOut");
+        match.classList.add("fadeIn");
+      });
+    };*/
+
+
+function gameRun(){}
+
+function startGame(){}
+
+function displaySelection(){}
+
+function computerSelect(){}
+ 
+function playerSelection(){}
+
+  function determineWinner(playSelections){
+    let computer = computerSelection();
+      switch(playSelections + computer) {
+           case "rockscissors":
+           case "paperrock":
+           case "scissorspaper":
+            incrementPlayerWin();
+            displayPlayerImage();
+               break;
+           case "scissorsrock":
+           case "rockpaper":
+           case "paperscissors":
+              incrementPlayerLose(); 
+              displayPlayerImage();
+               break;
+           case "scissorsscissors":
+           case "rockrock":
+           case "paperpaper":
+               incrementDraw();
+               displayPlayerImage();
+              break;                      
+      }   
+       
 }
+
+function dispalyWinner(){}
+
+function scoreCount(){}

@@ -287,13 +287,13 @@ along a play game button which leads to the game page with a the header and foot
     <img src="docs/features/signupform.PNG">
     </details>
 
-6. As a  site owner i want the gameto have an end  function  
+6. As a  site owner i want the game to have an end  function  
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
    | Game over message | game score raises to 12 | selectors are disable with a game over message | Works as expected |
 
      <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/inkedcontactinfo1.jpg">
+     <img src="docs/features/edited-gameover.png">
      </details>
 
 7. As a site Owner I want the user enjoy the creative output of the game
@@ -314,7 +314,7 @@ along a play game button which leads to the game page with a the header and foot
     | 404 error page | On non-matched URL| 404 page present with a return button to the game intro page | Works as expected |
 
     <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/404page.PNG">
+    <img src="docs/features/404page.png">
     </details>
 
 

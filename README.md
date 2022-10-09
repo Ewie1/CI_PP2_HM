@@ -72,7 +72,7 @@
 
 ### User Stories
 
-#### First-time User 
+####  User 
 
  1. Start game by button click
  2. Have a colorful game area 
@@ -83,19 +83,10 @@
  7. Have a game over and restart game option
 
 
-#### Returning User
- 
- 5. 
- 6. 
- 7. 
- 8. 
- 9. 
-
-
 #### Site Owner 
 
-10.
-12. 
+10. I want the user enjoy the creative output of the game
+12. As a site owner i want user ti enjoy playning the game
 13. 
 ## Design
 
@@ -152,8 +143,7 @@
 The page consists of 3 pages and 9 sections
 
 ### Header Display
-- The logo and nav bar section is one of the difference maker. It have a stylish logo which every
-gym needs and also a navigation bar which allow the user to freely navigate between the three pages presented. Here you can also find a signup button which return user to get to the sigup page without the need to scroll. 
+- The header give the name of the game with a special selected font style
 
 ![logo-and-nav](docs/features/menulogonavs.PNG)
 

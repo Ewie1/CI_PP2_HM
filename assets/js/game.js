@@ -126,6 +126,11 @@ function winGame(){
     gameOver();
     match.classList.add("fadeOut");
         restartScreen.classList.add("fadeIn");
+        const restartBtn = document.getElementById("restart");
+  restartBtn.addEventListener('click', () => {
+    window.location.reload();})
+    console.log("hello");
+ console.log(restartBtn);
       //  reset.addEventListener("click", resetGame);
 }
     }
@@ -146,8 +151,12 @@ function loseGame(){
     gameOver();
     match.classList.add("fadeOut");
     restartScreen.classList.add("fadeIn");
-    
-  }
+    const restartBtn = document.getElementById("restart");
+  restartBtn.addEventListener('click', () => {
+    window.location.reload();})
+    console.log("hello");
+ console.log(restartBtn);
+    }
 } 
 /**Game over function
  * Prevent actions when selections are clicked

@@ -110,17 +110,12 @@ function main() {
       loseGame();
       return;
     }
-    const restartBtn = document.getElementById("restart");
-    restartBtn.addEventListener('click', function () {
-      window.location.reload();
-    })
   }
   /**Win game function
    * Stop click selection at max pscore value
    * Fade out match screen and fade in restart screen
    */
   function winGame() {
-    //const restartGame = document.getElementById("restart");
     let playerScore = document.getElementById("player-score");
     let computerScore = document.getElementById("computer-score");
     let game = document.querySelector(".game");
@@ -156,7 +151,6 @@ function main() {
    * Prevent actions when selections are clicked
    */
   function gameOver() {
-
     let rock = document.getElementById("rock");
     let paper = document.getElementById("paper");
     let scissors = document.getElementById("scissors");

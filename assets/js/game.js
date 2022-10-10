@@ -6,8 +6,6 @@ function main() {
   runGame();
   winGame();
   loseGame();
-  restartGame();
-  resetGame();
 
   // funtion to fade intro page
   function gameIntro() {

@@ -1,13 +1,15 @@
 function main() {
   let pScore = 0;
   let cScore = 0;
-  //call inner functions
+  /**Call Inner functions */
   gameIntro();
   runGame();
   winGame();
   loseGame();
 
-  // funtion to fade intro page
+  /**function to fade out intro page 
+   * Fade in game page
+   */
   function gameIntro() {
     let playBtn = document.querySelector(".intro button");
     let introScreen = document.querySelector(".intro");
@@ -18,7 +20,13 @@ function main() {
       game.classList.add("fadeIn");
     });
   };
-  //function to run game
+  /**
+   * Run game function 
+   * add eventlistener to all buttons through for loop method
+   * return player selection image
+   * return computer random selection image
+   * 
+   */
   function runGame() {
     const options = document.querySelectorAll(".selections button");
     const playerImage = document.querySelector(".player-image");
@@ -36,22 +44,27 @@ function main() {
       })
     }
   }
-  // Function to determine scores
+  /**Incerement score results */
   function scoreResults() {
     let playerScore = document.getElementById("player-score");
     let computerScore = document.getElementById("computer-score");
     playerScore.innerText = pScore;
     computerScore.innerText = cScore;
   }
-  //Function to determine winner or loser
+  /**
+   * Determine rock, paper and scissors selection comparasion
+   * Display result mesaage win, lose or draw
+   * Increment scores
+   * Call score result function
+   * Call game winner function
+   * Call game loser function
+   */
   function checkWinner(playerSelection, computerSelection) {
     let displayResult = document.querySelector(".results");
-    //Checking for a tie
     if (playerSelection === computerSelection) {
       displayResult.textContent = "Draw";
       return;
     }
-    //Check for Rock
     if (playerSelection === "rock" && computerSelection === "scissors") {
       displayResult.textContent = "Youu Wins!!";
       pScore++;
@@ -67,7 +80,6 @@ function main() {
       loseGame();
       return;
     }
-    //Check for Paper
     if (playerSelection === "paper" && computerSelection === "scissors") {
       displayResult.textContent = "You lose!";
       cScore++;
@@ -83,7 +95,6 @@ function main() {
       loseGame();
       return;
     }
-    //Check for Scissors
     if (playerSelection === "scissors" && computerSelection === "rock") {
       displayResult.textContent = "You lose!";
       cScore++;
@@ -109,7 +120,7 @@ function main() {
    * Fade out match screen and fade in restart screen
    */
   function winGame() {
-    const restartGame = document.getElementById("restart");
+    //const restartGame = document.getElementById("restart");
     let playerScore = document.getElementById("player-score");
     let computerScore = document.getElementById("computer-score");
     let game = document.querySelector(".game");
@@ -155,6 +166,6 @@ function main() {
     scissors.setAttribute("disabled", "disabled");
   }
 }
-// call main function
+/**Call main function */
 main();
 

@@ -263,7 +263,7 @@ along a play game button which leads to the game page with a the header and foot
    |-------------|------------|---------------------|-------------------|
    | Result Message | click selector icons  |appears when selected options are compared  | Works as expected |
     <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/inkedfeatureslist.jpg">
+    <img src="docs/features/edited-results.jpg">
     </details>
 
 5. As a first time user i want to know my scores
@@ -272,7 +272,7 @@ along a play game button which leads to the game page with a the header and foot
    | Score count dispaly | click selector icons | score count changes | Works as expected |
 
     <details><summary>Screenshots</summary>
-    <img src="docs/features/signupform.PNG">
+    <img src="docs/features/edited-score.jpg">
     </details>
 
 6. As a  site owner i want the game to have an end  function  
@@ -281,7 +281,7 @@ along a play game button which leads to the game page with a the header and foot
    | Game over message | game score raises to 12 | selectors are disable with a game over message | Works as expected |
 
      <details><summary>Screenshots</summary>
-     <img src="docs/features/edited-gameover.png">
+     <img src="docs/features/gameover-button.png">
      </details>
 
 7. As a site Owner I want the user enjoy the creative output of the game

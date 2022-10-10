@@ -200,6 +200,12 @@ along a play game button which leads to the game page with a the header and foot
 <img src="/docs/validations/cssvalidation.png">
 </details>
 
+### JavaScript Validation
+
+<details><summary>Style</summary>
+<img src="/docs/validations/js-validation.png">
+</details>
+
 ### Accessibility
 
 <details><summary>Game Intro</summary>

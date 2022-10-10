@@ -118,12 +118,6 @@ function main() {
   function winGame() {
     let game = document.querySelector(".game");
     let restartScreen = document.querySelector(".restart-game");
-   /* let playerScore = document.getElementById("player-score");
-    let computerScore = document.getElementById("computer-score");
-    let game = document.querySelector(".game");
-    let restartScreen = document.querySelector(".restart-game")
-    playerScore.innerText = pScore;
-    computerScore.innerText = cScore; */
     if (pScore === 12) {
       gameOver();
       game.classList.add("fadeOut");
@@ -138,12 +132,6 @@ function main() {
   function loseGame() {
     let game = document.querySelector(".game");
     let restartScreen = document.querySelector(".restart-game");
-  /*  let playerScore = document.getElementById("player-score");
-    let computerScore = document.getElementById("computer-score");
-    let game = document.querySelector(".game");
-    let restartScreen = document.querySelector(".restart-game")
-    playerScore.innerText = pScore;
-    computerScore.innerText = cScore; */
     if (cScore === 12) {
       gameOver();
       game.classList.add("fadeOut");

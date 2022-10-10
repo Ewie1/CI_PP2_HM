@@ -204,26 +204,17 @@ along a play game button which leads to the game page with a the header and foot
 
 ### Accessibility
 
-<details><summary>Home</summary>
-<img src="/validations/accesssibility-home.PNG">
+<details><summary>Game Intro</summary>
+<img src="docs/validations/waves-ass.png">
 </details>
-<details><summary>About Us</summary>
-<img src="/validations/accessibilty-about.PNG">
-</details>
-<details><summary>Become a Member</summary>
-<img src="/docs/features/wireframes/validations/accessibilty-signup.PNG">
+<details><summary>Game Area</summary>
+<img src="docs/validations/game-page-ass.png">
 </details>
 
 ### Performance 
 
-<details><summary>Home</summary>
-<img src="/validations/performance-homepage.PNG">
-</details>
-<details><summary>About Us</summary>
-<img src="/validations/performance-aboutuspage.PNG">
-</details>
-<details><summary>Become a Member</summary>
-<img src="/validations/performance-signuppage.PNG">
+<details><summary>Game</summary>
+<img src="docs/validations/lighthouse-intro.png">
 </details>
 
 ### Performing tests on various devices 

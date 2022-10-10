@@ -202,7 +202,7 @@ along a play game button which leads to the game page with a the header and foot
 
 ### JavaScript Validation
 
-<details><summary>Style</summary>
+<details><summary>Js</summary>
 <img src="/docs/validations/js-validation.png">
 </details>
 

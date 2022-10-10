@@ -312,27 +312,18 @@ along a play game button which leads to the game page with a the header and foot
 ## Bugs
   List of bugs found and fixes used ti mitigate them.
 
-- Bug: the first page had overflow to the right of the page.
-  Fix: with from the slack community i was refered to unicorn revealer which showed my opentimes width was too much. Adjusted this and issue was fixed
-- Bug: during accessibilty test my good practice points were low
-  Fix: using the unicorn revealer again imanaged to find my logo image had margin space and my about us text had border radius value that were unneccessary. Adjusted these issues and my score got better
-- Bug: during html validation signup.html error, signup form "for" value and "id" value were not matching  
-    Fix: Change both value to the same which rectified error
-- Bug: html validation for index.hmtl warnings for lack of heading h1-h6 in section tags
-  Fix: removed unneccesary section tags
-- Bug: html validation error for all html file h1-h6 heading, some sequence wer skipped h2-h4 and    h2-h5 
-   Fix: changed heading tag for all html file to the correct sequences
-- Bug: Wave error for color contrast on navbar and more about us button "deep orange and very dark blue"
-  Fix: change to a slightly brighter orange to mitigate issue,
-- Bug: Wave error for color conflicting contrast with cover text for the hero image on the home page
-  Fix: Add a lite background overlay wrapped in a div tag to mitigate issue
-- Bug: loading performance on the home page was low due to hero image loading time
-  Fix: replaced hero-image 
-- Bug: background image for the "Become a Member" page look streched with distorted pixels
-  Fix: Replaced "Become a Member" page backgroung image
-- Bug: hero image overlay half way over the image  onthe big screen and overflowing into the ethos section
-   Fix: adjusted padding bottom and confirmed issue was no longer present
-   
+- Bug: W3 validator fauled due to empty player and computer selected img tag source.
+  Fix: Add default image file to img tag sources. 
+- Bug: Error fualt due to redundant undefined function
+  Fix: Deleted function from call list
+- Bug: Console log detect variable with null value called to textcontent in win game function
+    Fix: Deleted redundant code and confirm error fixed
+- Bug:  Console log detect variable with null value called to textcontent in lose game function
+  Fix:  Deleted redundant code and confirm error fixed
+- Bug: Footer links dispaly high on the iphone response screen
+   Fix: Adjusted footer positon
+- Bug: W3 validator detected stray div tag in index.html
+  Fix: Deleted div tag and confirm index.html pass validation
 
 ## Deployment
 The game was deployed using GitHub Pages by following these steps:

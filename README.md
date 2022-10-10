@@ -312,7 +312,7 @@ along a play game button which leads to the game page with a the header and foot
 ## Bugs
   List of bugs found and fixes used ti mitigate them.
 
-- Bug: W3 validator fauled due to empty player and computer selected img tag source.
+- Bug: W3C Validator fauled due to empty player and computer selected img tag source.
   Fix: Add default image file to img tag sources. 
 - Bug: Error fualt due to redundant undefined function
   Fix: Deleted function from call list
@@ -322,7 +322,7 @@ along a play game button which leads to the game page with a the header and foot
   Fix:  Deleted redundant code and confirm error fixed
 - Bug: Footer links dispaly high on the iphone response screen
    Fix: Adjusted footer positon
-- Bug: W3 validator detected stray div tag in index.html
+- Bug: W3C Validator detected stray div tag in index.html
   Fix: Deleted div tag and confirm index.html pass validation
 
 ## Deployment

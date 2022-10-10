@@ -116,12 +116,14 @@ function main() {
    * Fade out match screen and fade in restart screen
    */
   function winGame() {
-    let playerScore = document.getElementById("player-score");
+    let game = document.querySelector(".game");
+    let restartScreen = document.querySelector(".restart-game");
+   /* let playerScore = document.getElementById("player-score");
     let computerScore = document.getElementById("computer-score");
     let game = document.querySelector(".game");
     let restartScreen = document.querySelector(".restart-game")
     playerScore.innerText = pScore;
-    computerScore.innerText = cScore;
+    computerScore.innerText = cScore; */
     if (pScore === 12) {
       gameOver();
       game.classList.add("fadeOut");
@@ -134,16 +136,17 @@ function main() {
    * Fade out match screen and fade in restart screen
    */
   function loseGame() {
-
-    let playerScore = document.getElementById("player-score");
+    let game = document.querySelector(".game");
+    let restartScreen = document.querySelector(".restart-game");
+  /*  let playerScore = document.getElementById("player-score");
     let computerScore = document.getElementById("computer-score");
-    let match = document.querySelector(".game");
+    let game = document.querySelector(".game");
     let restartScreen = document.querySelector(".restart-game")
     playerScore.innerText = pScore;
-    computerScore.innerText = cScore;
+    computerScore.innerText = cScore; */
     if (cScore === 12) {
       gameOver();
-      match.classList.add("fadeOut");
+      game.classList.add("fadeOut");
       restartScreen.classList.add("fadeIn");
     }
   }

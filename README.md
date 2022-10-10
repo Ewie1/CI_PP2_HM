@@ -49,8 +49,7 @@
 
 - Build an easy to use interactive game 
 - Build a game with an attractive design
-- Build and game that is simple to navigate
--  
+- Build and game that is simple to navigate 
 
 ## User Experience
 
@@ -59,7 +58,6 @@
 - This game is build for the simple minded audience
 - Audience who just want something simple to pass time 
 - Younger Audience whi like cool images 
-
 
 ### User Reqirements and Expectaions
 
@@ -237,7 +235,7 @@ along a play game button which leads to the game page with a the header and foot
    | Play button | Clicked | Fades page to game area | Works as expected |
 
    <details><summary>Screenshots</summary>
-   <img src="docs/features/brightenergy.PNG">
+   <img src="docs/features/edited-button.jpg">
    </details>
 
 2.  As a first time user i want see attractive characters
@@ -247,7 +245,7 @@ along a play game button which leads to the game page with a the header and foot
     | Game area | leave intro page  | all game character visible | Works as expected |
 
      <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/inkedlocatmap.jpg">
+     <img src="docs/features/game-area.png">
      </details>
 
 3. As a first time user i want to have active selection options
@@ -256,7 +254,7 @@ along a play game button which leads to the game page with a the header and foot
    |-------------|------------|---------------------|-------------------|
    | Selsction icons | click selector icons| rock,paper or scissor image changes | Works as expected |
     <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/intteaser.jpg">
+    <img src="docs/features/edited-selectors.jpg">
     </details>
 
 4. As a first user have to see a win or lose message

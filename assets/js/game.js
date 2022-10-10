@@ -6,6 +6,7 @@ function main() {
   runGame();
   winGame();
   loseGame();
+  restartGame();
   resetGame();
 
   // funtion to fade intro page
@@ -121,12 +122,6 @@ function main() {
       gameOver();
       game.classList.add("fadeOut");
       restartScreen.classList.add("fadeIn");
-
-      restartGame.addEventListener('click', () => {
-        window.location.reload();
-      })
-      console.log("hello");
-      console.log(restartBtn);
     }
   }
 
@@ -146,25 +141,22 @@ function main() {
       gameOver();
       match.classList.add("fadeOut");
       restartScreen.classList.add("fadeIn");
-      const restartBtn = document.getElementById("restart");
-      restartBtn.addEventListener('click', () => {
-        window.location.reload();
-      })
     }
   }
   /**Game over function
    * Prevent actions when selections are clicked
-   */ 
+   */
   function gameOver() {
 
     let rock = document.getElementById("rock");
-    let paper = document.getElementById("paper");i
+    let paper = document.getElementById("paper");
     let scissors = document.getElementById("scissors");
+
     rock.setAttribute("disabled", "disabled");
     paper.setAttribute("disabled", "disabled");
     scissors.setAttribute("disabled", "disabled");
   }
 }
-/**call main function */ 
+// call main function
 main();
 
